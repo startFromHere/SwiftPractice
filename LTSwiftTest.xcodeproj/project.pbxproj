@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		CF70AB1520E35E5C00C177A4 /* LTDynamicAnimatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */; };
 		CF70AB1720E3612C00C177A4 /* LTBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */; };
+		CF70AB1920E37DD300C177A4 /* LTQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */; };
+		CF70AB1C20E4D85E00C177A4 /* LTAgendaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1B20E4D85E00C177A4 /* LTAgendaVC.swift */; };
+		CF70AB1E20E4D87900C177A4 /* LTAgendaDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1D20E4D87900C177A4 /* LTAgendaDetailVC.swift */; };
+		CF70AB2020E4D90A00C177A4 /* LTContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1F20E4D90A00C177A4 /* LTContact.swift */; };
+		CF70AB2220E4FD0E00C177A4 /* LTNewContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB2120E4FD0E00C177A4 /* LTNewContactVC.swift */; };
 		CF9F4A5C20034A90003EDC38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F4A5B20034A90003EDC38 /* AppDelegate.swift */; };
 		CF9F4A5E20034A90003EDC38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F4A5D20034A90003EDC38 /* ViewController.swift */; };
 		CF9F4A6120034A90003EDC38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F4A5F20034A90003EDC38 /* Main.storyboard */; };
@@ -38,6 +43,11 @@
 /* Begin PBXFileReference section */
 		CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTDynamicAnimatorVC.swift; sourceTree = "<group>"; };
 		CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTBaseVC.swift; sourceTree = "<group>"; };
+		CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTQRCodeVC.swift; sourceTree = "<group>"; };
+		CF70AB1B20E4D85E00C177A4 /* LTAgendaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAgendaVC.swift; sourceTree = "<group>"; };
+		CF70AB1D20E4D87900C177A4 /* LTAgendaDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAgendaDetailVC.swift; sourceTree = "<group>"; };
+		CF70AB1F20E4D90A00C177A4 /* LTContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTContact.swift; sourceTree = "<group>"; };
+		CF70AB2120E4FD0E00C177A4 /* LTNewContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTNewContactVC.swift; sourceTree = "<group>"; };
 		CF9F4A5820034A90003EDC38 /* LTSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9F4A5B20034A90003EDC38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9F4A5D20034A90003EDC38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */ = {
+			isa = PBXGroup;
+			children = (
+				CF70AB1B20E4D85E00C177A4 /* LTAgendaVC.swift */,
+				CF70AB1D20E4D87900C177A4 /* LTAgendaDetailVC.swift */,
+				CF70AB2120E4FD0E00C177A4 /* LTNewContactVC.swift */,
+				CF70AB1F20E4D90A00C177A4 /* LTContact.swift */,
+			);
+			path = LTBasicAgenda;
+			sourceTree = "<group>";
+		};
 		CF9F4A4F20034A90003EDC38 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +126,8 @@
 				CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */,
 				CF9F4A5D20034A90003EDC38 /* ViewController.swift */,
 				CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */,
+				CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */,
+				CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */,
 				CF9F4A5F20034A90003EDC38 /* Main.storyboard */,
 				CF9F4A6220034A90003EDC38 /* Assets.xcassets */,
 				CF9F4A6420034A90003EDC38 /* LaunchScreen.storyboard */,
@@ -267,7 +290,12 @@
 			files = (
 				CF9F4A5E20034A90003EDC38 /* ViewController.swift in Sources */,
 				CF70AB1720E3612C00C177A4 /* LTBaseVC.swift in Sources */,
+				CF70AB1C20E4D85E00C177A4 /* LTAgendaVC.swift in Sources */,
+				CF70AB1920E37DD300C177A4 /* LTQRCodeVC.swift in Sources */,
 				CF70AB1520E35E5C00C177A4 /* LTDynamicAnimatorVC.swift in Sources */,
+				CF70AB2220E4FD0E00C177A4 /* LTNewContactVC.swift in Sources */,
+				CF70AB1E20E4D87900C177A4 /* LTAgendaDetailVC.swift in Sources */,
+				CF70AB2020E4D90A00C177A4 /* LTContact.swift in Sources */,
 				CF9F4A5C20034A90003EDC38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,12 +462,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK9W72FL93;
 				INFOPLIST_FILE = LTSwiftTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lt.ltTest.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -449,12 +480,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK9W72FL93;
 				INFOPLIST_FILE = LTSwiftTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lt.ltTest.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
