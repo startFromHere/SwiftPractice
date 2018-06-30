@@ -14,6 +14,7 @@
 		CF70AB1E20E4D87900C177A4 /* LTAgendaDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1D20E4D87900C177A4 /* LTAgendaDetailVC.swift */; };
 		CF70AB2020E4D90A00C177A4 /* LTContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1F20E4D90A00C177A4 /* LTContact.swift */; };
 		CF70AB2220E4FD0E00C177A4 /* LTNewContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB2120E4FD0E00C177A4 /* LTNewContactVC.swift */; };
+		CF9C329D20E613CC001514A6 /* LTCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9C329C20E613CC001514A6 /* LTCalendarVC.swift */; };
 		CF9F4A5C20034A90003EDC38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F4A5B20034A90003EDC38 /* AppDelegate.swift */; };
 		CF9F4A5E20034A90003EDC38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F4A5D20034A90003EDC38 /* ViewController.swift */; };
 		CF9F4A6120034A90003EDC38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F4A5F20034A90003EDC38 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		CF70AB1D20E4D87900C177A4 /* LTAgendaDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAgendaDetailVC.swift; sourceTree = "<group>"; };
 		CF70AB1F20E4D90A00C177A4 /* LTContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTContact.swift; sourceTree = "<group>"; };
 		CF70AB2120E4FD0E00C177A4 /* LTNewContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTNewContactVC.swift; sourceTree = "<group>"; };
+		CF9C329C20E613CC001514A6 /* LTCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCalendarVC.swift; sourceTree = "<group>"; };
 		CF9F4A5820034A90003EDC38 /* LTSwiftTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTSwiftTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9F4A5B20034A90003EDC38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF9F4A5D20034A90003EDC38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				CF9F4A5D20034A90003EDC38 /* ViewController.swift */,
 				CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */,
 				CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */,
+				CF9C329C20E613CC001514A6 /* LTCalendarVC.swift */,
 				CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */,
 				CF9F4A5F20034A90003EDC38 /* Main.storyboard */,
 				CF9F4A6220034A90003EDC38 /* Assets.xcassets */,
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9C329D20E613CC001514A6 /* LTCalendarVC.swift in Sources */,
 				CF9F4A5E20034A90003EDC38 /* ViewController.swift in Sources */,
 				CF70AB1720E3612C00C177A4 /* LTBaseVC.swift in Sources */,
 				CF70AB1C20E4D85E00C177A4 /* LTAgendaVC.swift in Sources */,
