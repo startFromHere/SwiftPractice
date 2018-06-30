@@ -10,7 +10,7 @@ import UIKit
 
 class LTAgendaDetailVC: LTBaseVC {
 
-    var contract:LTContact!
+    var contract:LTContact?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class LTAgendaDetailVC: LTBaseVC {
         textView.layer.cornerRadius = 4
         self.view.addSubview(textView)
         
-        textView.text = "name:\(contract.name) surname:\(contract.surname)\nphone:\(contract.phone) email:\(contract.email)"
+        textView.text = "name:\(contract!.name) surname:\(contract!.surname)\nphone:\(contract!.phone) email:\(contract!.email)"
     }
     
 }
