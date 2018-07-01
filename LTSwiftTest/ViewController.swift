@@ -20,7 +20,7 @@ class ViewController: LTBaseVC {
     
     @objc func gotoTargetVC() {
 //        let targetVC = LTDynamicAnimatorVC()
-        let targetVC = LTAgendaVC()
+        let targetVC = LTFlipCardsVC()
         self.navigationController?.pushViewController(targetVC, animated: true)
     }
     
