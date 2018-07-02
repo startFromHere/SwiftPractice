@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CF08CCA220E8CDB800A3E1D6 /* LTFlipCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08CCA120E8CDB800A3E1D6 /* LTFlipCardsVC.swift */; };
+		CF3191D220EA18BC009CAC90 /* LTConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3191D120EA18BC009CAC90 /* LTConcentrationGame.swift */; };
+		CF3191D420EA18DF009CAC90 /* LTFlipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3191D320EA18DF009CAC90 /* LTFlipCard.swift */; };
 		CF70AB1520E35E5C00C177A4 /* LTDynamicAnimatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */; };
 		CF70AB1720E3612C00C177A4 /* LTBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */; };
 		CF70AB1920E37DD300C177A4 /* LTQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		CF08CCA120E8CDB800A3E1D6 /* LTFlipCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTFlipCardsVC.swift; sourceTree = "<group>"; };
+		CF3191D120EA18BC009CAC90 /* LTConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTConcentrationGame.swift; sourceTree = "<group>"; };
+		CF3191D320EA18DF009CAC90 /* LTFlipCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTFlipCard.swift; sourceTree = "<group>"; };
 		CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTDynamicAnimatorVC.swift; sourceTree = "<group>"; };
 		CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTBaseVC.swift; sourceTree = "<group>"; };
 		CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTQRCodeVC.swift; sourceTree = "<group>"; };
@@ -92,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF3191D020EA17BB009CAC90 /* LTFlipCard */ = {
+			isa = PBXGroup;
+			children = (
+				CF08CCA120E8CDB800A3E1D6 /* LTFlipCardsVC.swift */,
+				CF3191D120EA18BC009CAC90 /* LTConcentrationGame.swift */,
+				CF3191D320EA18DF009CAC90 /* LTFlipCard.swift */,
+			);
+			path = LTFlipCard;
+			sourceTree = "<group>";
+		};
 		CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,13 +140,13 @@
 		CF9F4A5A20034A90003EDC38 /* LTSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				CF3191D020EA17BB009CAC90 /* LTFlipCard */,
 				CF9F4A5B20034A90003EDC38 /* AppDelegate.swift */,
 				CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */,
 				CF9F4A5D20034A90003EDC38 /* ViewController.swift */,
 				CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */,
 				CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */,
 				CF9C329C20E613CC001514A6 /* LTCalendarVC.swift */,
-				CF08CCA120E8CDB800A3E1D6 /* LTFlipCardsVC.swift */,
 				CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */,
 				CF9F4A5F20034A90003EDC38 /* Main.storyboard */,
 				CF9F4A6220034A90003EDC38 /* Assets.xcassets */,
@@ -295,6 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9C329D20E613CC001514A6 /* LTCalendarVC.swift in Sources */,
+				CF3191D420EA18DF009CAC90 /* LTFlipCard.swift in Sources */,
+				CF3191D220EA18BC009CAC90 /* LTConcentrationGame.swift in Sources */,
 				CF9F4A5E20034A90003EDC38 /* ViewController.swift in Sources */,
 				CF70AB1720E3612C00C177A4 /* LTBaseVC.swift in Sources */,
 				CF70AB1C20E4D85E00C177A4 /* LTAgendaVC.swift in Sources */,
