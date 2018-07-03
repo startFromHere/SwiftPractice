@@ -20,9 +20,8 @@ class LTConcentrationGame {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                     indexOfTheOnlyFaceUpCard = nil
-                } else {
-                   cards[index].isFaceUp = true
                 }
+                cards[index].isFaceUp = true
                 indexOfTheOnlyFaceUpCard = nil
             } else {
                 for flipIndex in cards.indices {
@@ -37,8 +36,14 @@ class LTConcentrationGame {
     init(numberOfPairsOfCards: Int) {
         for _ in 1...numberOfPairsOfCards {
             let card = LTFlipCard()
+            test(card)
             cards += [card,card]
         }
+        cards = cards.sorted(){ _,_ in (UInt32)(arc4random()%2) == 0 }
+    }
+    
+    func test(_ card:LTFlipCard) {
+
     }
     
 }

@@ -10,69 +10,72 @@ import Foundation
 import UIKit
 
 class LTFlipCardsVC : LTBaseVC,CAAnimationDelegate {
-    var icons = ["🐶","🐱","🐭","🦊","🐻","🐶","🐱","🐭","🦊","🐻","🐯","🐯"]
-    var cards:Array = [UIButton]()
+    
+    lazy var game = LTConcentrationGame(numberOfPairsOfCards: emojiChoices.count)
+    
+    var buttons:Array = [UIButton]()
     let clickCountLabel:UILabel = UILabel(frame: CGRect(x: 50, y: UIScreen.main.bounds.size.height - 100, width: UIScreen.main.bounds.size.width - 100, height: 80))
     var countOfClick = 0 {
         didSet{
-          clickCountLabel.text = "clicked:\(countOfClick)"
+            clickCountLabel.text = "clicked:\(100-countOfClick)"
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.initUI()
     }
     
     func initUI(){
-        for i in 0...icons.count-1  {
-            let card = UIButton(frame: CGRect(x: 20 + i%6 * 60, y:80 + i/6 * 80, width: 40, height: 60))
-            card.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
-            view.addSubview(card)
+        for i in 0..<emojiChoices.count*2  {
+            let button = UIButton(type: .system)
+            button.frame = CGRect(x: 20 + i%6 * 60, y:80 + i/6 * 80, width: 40, height: 60)
+            button.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+            button.tag = i
+            view.addSubview(button)
+            button.addTarget(self, action: #selector(LTFlipCardsVC.clicked(onButton:)), for: .touchUpInside)
             
-            card.addTarget(self, action: #selector(LTFlipCardsVC.clicked(onButton:)), for: .touchUpInside)
-            
-            cards.append(card)
+            buttons.append(button)
         }
         
         clickCountLabel.font = UIFont.systemFont(ofSize: 40)
-        clickCountLabel.backgroundColor = #colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1)
+        clickCountLabel.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
         clickCountLabel.textAlignment = .center
         view.addSubview(clickCountLabel)
     }
     
     @objc func clicked(onButton button:UIButton){
         countOfClick += 1
-        button.setTitle(icons[0], for: .normal)
-//        self.turnBack(card: button)
+        if let cardNumber = buttons.index(of: button) {
+            game.chooseCard(at: cardNumber)
+            updateViewFromModel()
+        } else {
+            print("choosen card was not in cardButtons")
+        }
     }
     
-//    func turnBack(card: UIButton){
-//        let animation:CAKeyframeAnimation = CAKeyframeAnimation()
-//    
-//        animation.values = [(CATransform3DMakeRotation(0, 0, 1, 0)),(CATransform3DMakeRotation((CGFloat(M_PI/2)), 0, 1, 0)),
-//                            (CATransform3DMakeRotation(0, 0, 1, 0))]
-//        animation.duration = 2
-//        animation.repeatCount = 1
-//        animation.fillMode = kCAFillModeForwards
-//        animation.isCumulative = false
-//        animation.isRemovedOnCompletion = false
-//        animation.delegate = self
-//        card.layer.add(animation, forKey: "transform")
-//        
-//        self.perform(#selector(self.resetTitle(ofCard:)), with: card, afterDelay: 1)
-//
-//    }
-//    
-//    @objc func resetTitle(ofCard card:UIButton){
-//        if (card.currentTitle?.count)! > 0 {
-//            card.setTitle(nil, for: .normal)
-//        } else {
-//            if let index = cards.index(of: card){
-//               card.setTitle(icons[index], for: .normal)
-//            }
-//        }
-//    }
+    func updateViewFromModel() {
+        for button in buttons {
+            let card = game.cards[button.tag]
+            if card.isFaceUp {
+                button.setTitle(emoji(for: card), for: .normal)
+                button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+            } else {
+                button.setTitle("", for: .normal)
+                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) : #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+            }
+        }
+    }
+    
+    var emojiChoices = ["🐶","🐱","🐭","🦊","🐻","🐯","🐤","🐸","🐵"]
+    
+    var emojiDic = [Int:String]()
+    func emoji(for card:LTFlipCard) -> String {
+        if emojiDic[card.identifier] == nil,emojiChoices.count > 0{
+            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count - 1)))
+            emojiDic[card.identifier] = emojiChoices.remove(at: randomIndex)
+        }
+        return emojiDic[card.identifier] ?? "🐯"
+    }
     
 }

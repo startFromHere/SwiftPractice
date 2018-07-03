@@ -140,6 +140,7 @@
 		CF9F4A5A20034A90003EDC38 /* LTSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */,
 				CF3191D020EA17BB009CAC90 /* LTFlipCard */,
 				CF9F4A5B20034A90003EDC38 /* AppDelegate.swift */,
 				CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */,
@@ -147,7 +148,6 @@
 				CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */,
 				CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */,
 				CF9C329C20E613CC001514A6 /* LTCalendarVC.swift */,
-				CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */,
 				CF9F4A5F20034A90003EDC38 /* Main.storyboard */,
 				CF9F4A6220034A90003EDC38 /* Assets.xcassets */,
 				CF9F4A6420034A90003EDC38 /* LaunchScreen.storyboard */,

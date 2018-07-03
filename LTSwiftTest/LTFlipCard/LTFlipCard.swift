@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-struct LTFlipCard:UIButton {
+struct LTFlipCard {
     
     var isFaceUp = false
     var isMatched = false
     var identifier: Int
     
-    static var identifierFactory = 0
+    static var identifierFactory = -1
     static func getUniqueIdentifier ()->Int {
         identifierFactory += 1
         return identifierFactory
