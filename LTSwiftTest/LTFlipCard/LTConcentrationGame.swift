@@ -10,24 +10,29 @@ import Foundation
 
 class LTConcentrationGame {
     
-    var cards = [LTFlipCard]()
-    var indexOfTheOnlyFaceUpCard: Int?
+    private(set) var cards = [LTFlipCard]()
+    private var indexOfTheOnlyFaceUpCard: Int?{
+        get {
+            return cards.indices.filter {cards[$0].isFaceUp}.oneAndOnly
+        }
+        set {
+            for index in cards.indices {
+                cards[index].isFaceUp = (index == newValue)
+            }
+        }
+    }
     
     func chooseCard(at index: Int) {
+        assert(cards.indices.contains(index),"Concentration.chooseCard(at:\(index)):Choosen index out of range")
+        
         if !cards[index].isMatched {
             if let matchIndex = indexOfTheOnlyFaceUpCard,matchIndex != index {
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
-                    indexOfTheOnlyFaceUpCard = nil
                 }
                 cards[index].isFaceUp = true
-                indexOfTheOnlyFaceUpCard = nil
             } else {
-                for flipIndex in cards.indices {
-                    cards[flipIndex].isFaceUp = false
-                }
-                cards[index].isFaceUp = true
                 indexOfTheOnlyFaceUpCard = index
             }
         }
@@ -45,5 +50,10 @@ class LTConcentrationGame {
     func test(_ card:LTFlipCard) {
 
     }
-    
+}
+
+extension Collection {
+    var oneAndOnly : Element? {
+        return count == 1 ? first : nil
+    }
 }

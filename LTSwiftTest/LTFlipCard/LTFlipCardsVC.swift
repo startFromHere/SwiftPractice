@@ -11,14 +11,30 @@ import UIKit
 
 class LTFlipCardsVC : LTBaseVC,CAAnimationDelegate {
     
-    lazy var game = LTConcentrationGame(numberOfPairsOfCards: emojiChoices.count)
+    private lazy var game = LTConcentrationGame(numberOfPairsOfCards: emojiChoices.count)
     
-    var buttons:Array = [UIButton]()
-    let clickCountLabel:UILabel = UILabel(frame: CGRect(x: 50, y: UIScreen.main.bounds.size.height - 100, width: UIScreen.main.bounds.size.width - 100, height: 80))
+    private var buttons:Array = [UIButton]()
+    private var clickCountLabel:UILabel = UILabel(frame: CGRect(x: 50, y: UIScreen.main.bounds.size.height - 100, width: UIScreen.main.bounds.size.width - 100, height: 80)){
+        didSet {
+            updateViewFromModel()
+        }
+    }
+    
     var countOfClick = 0 {
         didSet{
-            clickCountLabel.text = "clicked:\(100-countOfClick)"
+           updateViewFromModel()
         }
+    }
+    
+    func updateClickCountLabel(){
+        let attributes : [NSAttributedStringKey: Any] = [
+            .strokeWidth: 5.0,
+            .strokeColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        ]
+        
+        let attributeString = NSAttributedString(string: "Flips:\(100-countOfClick)",attributes:attributes)
+        
+        clickCountLabel.attributedText = attributeString
     }
     
     override func viewDidLoad() {
@@ -54,7 +70,7 @@ class LTFlipCardsVC : LTBaseVC,CAAnimationDelegate {
         }
     }
     
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         for button in buttons {
             let card = game.cards[button.tag]
             if card.isFaceUp {
@@ -67,15 +83,25 @@ class LTFlipCardsVC : LTBaseVC,CAAnimationDelegate {
         }
     }
     
-    var emojiChoices = ["🐶","🐱","🐭","🦊","🐻","🐯","🐤","🐸","🐵"]
+    var emojiChoices = "🐶🐱🐭🦊🐻🐯🐤🐸🐵"
     
-    var emojiDic = [Int:String]()
-    func emoji(for card:LTFlipCard) -> String {
-        if emojiDic[card.identifier] == nil,emojiChoices.count > 0{
-            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count - 1)))
-            emojiDic[card.identifier] = emojiChoices.remove(at: randomIndex)
+    var emojiDic = [LTFlipCard:String]()
+    private func emoji(for card:LTFlipCard) -> String {
+        if emojiDic[card] == nil,emojiChoices.count > 0 {
+            let rdmIdx = emojiChoices.index(emojiChoices.startIndex, offsetBy: emojiChoices.count.arc4Random)
+            emojiDic[card] = String(emojiChoices.remove(at: rdmIdx))
         }
-        return emojiDic[card.identifier] ?? "🐯"
+        return emojiDic[card] ?? "🐯"
     }
-    
+}
+
+extension Int {
+    var arc4Random:Int {
+        switch self {
+        case 1...Int.max:
+            return Int(arc4random_uniform(UInt32(self)))
+        default:
+            return -Int(arc4random_uniform(UInt32(self)))
+        }
+    }
 }
