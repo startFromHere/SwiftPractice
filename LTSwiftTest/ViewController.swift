@@ -17,10 +17,10 @@ class ViewController: LTBaseVC {
         super.viewDidLoad()
         self.configUI()
     }
-    
+
     @objc func gotoTargetVC() {
 //        let targetVC = LTDynamicAnimatorVC()
-        let targetVC = LTFlipCardsVC()
+        let targetVC = LTPlayingCardVC()
         self.navigationController?.pushViewController(targetVC, animated: true)
     }
     

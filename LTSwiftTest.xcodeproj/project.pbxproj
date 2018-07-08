@@ -10,6 +10,11 @@
 		CF08CCA220E8CDB800A3E1D6 /* LTFlipCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF08CCA120E8CDB800A3E1D6 /* LTFlipCardsVC.swift */; };
 		CF3191D220EA18BC009CAC90 /* LTConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3191D120EA18BC009CAC90 /* LTConcentrationGame.swift */; };
 		CF3191D420EA18DF009CAC90 /* LTFlipCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3191D320EA18DF009CAC90 /* LTFlipCard.swift */; };
+		CF680EB020EF1A4600909135 /* LTPlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF680EAF20EF1A4600909135 /* LTPlayingCard.swift */; };
+		CF680EB320F0F67E00909135 /* LTPlayingCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF680EB120F0F67E00909135 /* LTPlayingCardVC.swift */; };
+		CF680EB420F0F67E00909135 /* LTPlayingCardVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF680EB220F0F67E00909135 /* LTPlayingCardVC.xib */; };
+		CF680EB620F0F6AB00909135 /* LTPlayingCardsDesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF680EB520F0F6AB00909135 /* LTPlayingCardsDesk.swift */; };
+		CF680EB820F0FE2600909135 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF680EB720F0FE2600909135 /* PlayingCardView.swift */; };
 		CF70AB1520E35E5C00C177A4 /* LTDynamicAnimatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */; };
 		CF70AB1720E3612C00C177A4 /* LTBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */; };
 		CF70AB1920E37DD300C177A4 /* LTQRCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */; };
@@ -48,6 +53,11 @@
 		CF08CCA120E8CDB800A3E1D6 /* LTFlipCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTFlipCardsVC.swift; sourceTree = "<group>"; };
 		CF3191D120EA18BC009CAC90 /* LTConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTConcentrationGame.swift; sourceTree = "<group>"; };
 		CF3191D320EA18DF009CAC90 /* LTFlipCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTFlipCard.swift; sourceTree = "<group>"; };
+		CF680EAF20EF1A4600909135 /* LTPlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPlayingCard.swift; sourceTree = "<group>"; };
+		CF680EB120F0F67E00909135 /* LTPlayingCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPlayingCardVC.swift; sourceTree = "<group>"; };
+		CF680EB220F0F67E00909135 /* LTPlayingCardVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTPlayingCardVC.xib; sourceTree = "<group>"; };
+		CF680EB520F0F6AB00909135 /* LTPlayingCardsDesk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTPlayingCardsDesk.swift; sourceTree = "<group>"; };
+		CF680EB720F0FE2600909135 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
 		CF70AB1420E35E5C00C177A4 /* LTDynamicAnimatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTDynamicAnimatorVC.swift; sourceTree = "<group>"; };
 		CF70AB1620E3612C00C177A4 /* LTBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTBaseVC.swift; sourceTree = "<group>"; };
 		CF70AB1820E37DD300C177A4 /* LTQRCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTQRCodeVC.swift; sourceTree = "<group>"; };
@@ -106,6 +116,18 @@
 			path = LTFlipCard;
 			sourceTree = "<group>";
 		};
+		CF680EAE20EF190A00909135 /* LTPlayingCard */ = {
+			isa = PBXGroup;
+			children = (
+				CF680EAF20EF1A4600909135 /* LTPlayingCard.swift */,
+				CF680EB720F0FE2600909135 /* PlayingCardView.swift */,
+				CF680EB120F0F67E00909135 /* LTPlayingCardVC.swift */,
+				CF680EB220F0F67E00909135 /* LTPlayingCardVC.xib */,
+				CF680EB520F0F6AB00909135 /* LTPlayingCardsDesk.swift */,
+			);
+			path = LTPlayingCard;
+			sourceTree = "<group>";
+		};
 		CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +162,7 @@
 		CF9F4A5A20034A90003EDC38 /* LTSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				CF680EAE20EF190A00909135 /* LTPlayingCard */,
 				CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */,
 				CF3191D020EA17BB009CAC90 /* LTFlipCard */,
 				CF9F4A5B20034A90003EDC38 /* AppDelegate.swift */,
@@ -282,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9F4A6620034A90003EDC38 /* LaunchScreen.storyboard in Resources */,
+				CF680EB420F0F67E00909135 /* LTPlayingCardVC.xib in Resources */,
 				CF9F4A6320034A90003EDC38 /* Assets.xcassets in Resources */,
 				CF9F4A6120034A90003EDC38 /* Main.storyboard in Resources */,
 			);
@@ -309,13 +333,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF9C329D20E613CC001514A6 /* LTCalendarVC.swift in Sources */,
+				CF680EB620F0F6AB00909135 /* LTPlayingCardsDesk.swift in Sources */,
 				CF3191D420EA18DF009CAC90 /* LTFlipCard.swift in Sources */,
+				CF680EB020EF1A4600909135 /* LTPlayingCard.swift in Sources */,
 				CF3191D220EA18BC009CAC90 /* LTConcentrationGame.swift in Sources */,
+				CF680EB820F0FE2600909135 /* PlayingCardView.swift in Sources */,
 				CF9F4A5E20034A90003EDC38 /* ViewController.swift in Sources */,
 				CF70AB1720E3612C00C177A4 /* LTBaseVC.swift in Sources */,
 				CF70AB1C20E4D85E00C177A4 /* LTAgendaVC.swift in Sources */,
 				CF70AB1920E37DD300C177A4 /* LTQRCodeVC.swift in Sources */,
 				CF08CCA220E8CDB800A3E1D6 /* LTFlipCardsVC.swift in Sources */,
+				CF680EB320F0F67E00909135 /* LTPlayingCardVC.swift in Sources */,
 				CF70AB1520E35E5C00C177A4 /* LTDynamicAnimatorVC.swift in Sources */,
 				CF70AB2220E4FD0E00C177A4 /* LTNewContactVC.swift in Sources */,
 				CF70AB1E20E4D87900C177A4 /* LTAgendaDetailVC.swift in Sources */,

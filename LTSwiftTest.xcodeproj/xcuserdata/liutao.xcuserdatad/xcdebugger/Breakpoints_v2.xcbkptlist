@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LTSwiftTest/LTFlipCard/LTFlipCardsVC.swift"
-            timestampString = "552468836.7720571"
+            timestampString = "552754610.4444259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LTSwiftTest/LTFlipCard/LTFlipCardsVC.swift"
-            timestampString = "552468836.772413"
+            timestampString = "552754610.444605"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LTSwiftTest/LTFlipCard/LTConcentrationGame.swift"
-            timestampString = "552468836.7725509"
+            timestampString = "552754610.444667"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LTSwiftTest/LTFlipCard/LTFlipCardsVC.swift"
-            timestampString = "552468836.773363"
+            timestampString = "552754610.444774"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "emoji(for:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,13 +74,156 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LTSwiftTest/ViewController.swift"
-            timestampString = "552468836.773487"
+            timestampString = "552754610.444922"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LTSwiftTest/LTPlayingCard/PlayingCardView.swift"
+            timestampString = "552754610.445097"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "draw(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LTSwiftTest/LTPlayingCard/PlayingCardView.swift"
+            timestampString = "552754610.4451981"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "draw(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LTSwiftTest/LTPlayingCard/LTPlayingCardVC.swift"
+            timestampString = "552754610.4452699"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "nextCard()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LTSwiftTest/LTPlayingCard/LTPlayingCardVC.swift"
+            timestampString = "552754610.445881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "cardView"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LTSwiftTest/LTPlayingCard/PlayingCardView.swift"
+            timestampString = "552754610.446294"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "PlayingCardView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LTSwiftTest.PlayingCardView.rank.didset : Swift.Int"
+                  moduleName = "LTSwiftTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liutao/Desktop/Swift/LTSwiftTest/LTSwiftTest/LTPlayingCard/PlayingCardView.swift"
+                  timestampString = "552754610.611887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LTSwiftTest.PlayingCardView.init(frame: __C.CGRect) -&gt; LTSwiftTest.PlayingCardView"
+                  moduleName = "LTSwiftTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liutao/Desktop/Swift/LTSwiftTest/LTSwiftTest/LTPlayingCard/PlayingCardView.swift"
+                  timestampString = "552754610.6145999"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "45">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LTSwiftTest.PlayingCardView.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;LTSwiftTest.PlayingCardView&gt;"
+                  moduleName = "LTSwiftTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liutao/Desktop/Swift/LTSwiftTest/LTSwiftTest/LTPlayingCard/PlayingCardView.swift"
+                  timestampString = "552754610.617352"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LTSwiftTest/LTPlayingCard/LTPlayingCardVC.swift"
+            timestampString = "552754610.446365"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "cardView"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
