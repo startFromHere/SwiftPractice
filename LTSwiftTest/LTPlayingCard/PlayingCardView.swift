@@ -9,13 +9,13 @@
 import UIKit
 
 @IBDesignable
-class PlayingCardView: UIView {
+class PlayingCardView: UIView,Equatable {
     @IBInspectable
     var rank: Int = 12 { didSet {setNeedsLayout(); setNeedsLayout()}}
     @IBInspectable
-    var suit:String = "❤️"
+    var suit:String = "❤️" { didSet {setNeedsLayout();setNeedsDisplay()}}
     @IBInspectable
-    var isFaceUp: Bool = true
+    var isFaceUp: Bool = true { didSet {setNeedsLayout();setNeedsDisplay()}}
     @IBInspectable
     var faceCardScale: CGFloat = SizeRatio.faceCardImageSizeToBoundsSize { didSet {setNeedsDisplay() } }
     
@@ -179,11 +179,21 @@ extension CGRect {
         let newHeight = height * scale
         return insetBy(dx: (width - newWidth) / 2, dy: (height - newHeight) / 2)
     }
+    
+    static func == (lhs:PlayingCardView, rhs:PlayingCardView) -> Bool {
+        return lhs.rank == rhs.rank && lhs.suit == rhs.suit
+    }
 }
 
 extension CGPoint {
     func offsetBy(dx: CGFloat, dy: CGFloat) -> CGPoint {
         return CGPoint(x: x+dx, y: y+dy)
+    }
+}
+
+extension CGFloat {
+    var arc4random: CGFloat {
+        return self * (CGFloat(arc4random_uniform(UInt32.max))/CGFloat(UInt32.max))
     }
 }
 
