@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class PlayingCardView: UIView,Equatable {
+class PlayingCardView: UIView {
     @IBInspectable
     var rank: Int = 12 { didSet {setNeedsLayout(); setNeedsLayout()}}
     @IBInspectable
@@ -130,6 +130,7 @@ class PlayingCardView: UIView,Equatable {
     }
 }
 
+
 extension PlayingCardView {
     private struct SizeRatio {
         static let cornerFontSizeToBoundsHeight: CGFloat = 0.085
@@ -178,10 +179,6 @@ extension CGRect {
         let newWidth = width * scale
         let newHeight = height * scale
         return insetBy(dx: (width - newWidth) / 2, dy: (height - newHeight) / 2)
-    }
-    
-    static func == (lhs:PlayingCardView, rhs:PlayingCardView) -> Bool {
-        return lhs.rank == rhs.rank && lhs.suit == rhs.suit
     }
 }
 

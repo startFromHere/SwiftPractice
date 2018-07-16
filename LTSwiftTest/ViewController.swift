@@ -39,4 +39,10 @@ class ViewController: LTBaseVC {
     }
 }
 
+extension UIView {
+    static func == (lhs:UIView, rhs:UIView) -> Bool {
+        return lhs.backgroundColor?.cgColor == rhs.backgroundColor?.cgColor
+    }
+}
+
 
