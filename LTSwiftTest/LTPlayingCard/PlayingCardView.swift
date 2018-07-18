@@ -162,6 +162,10 @@ extension PlayingCardView {
     
 }
 
+func == (lhs:PlayingCardView, rhs:PlayingCardView) -> Bool{
+    return lhs.rank == rhs.rank && lhs.suit == rhs.suit
+}
+
 extension CGRect {
     var leftHalf: CGRect {
         return CGRect(x: minX, y: minY, width: width/2, height: height)

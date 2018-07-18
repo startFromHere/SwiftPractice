@@ -16,6 +16,16 @@ class ViewController: LTBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configUI()
+        
+        var playerOne: UIViewController = UIViewController()
+//        playerOne = nil
+        
+        if playerOne.printSth() == nil {
+            print("ddddd")
+        } else {
+            print("qqqqq")
+        }
+        print(playerOne.printSth())
     }
 
     @objc func gotoTargetVC() {
@@ -38,11 +48,16 @@ class ViewController: LTBaseVC {
         button.addTarget(self, action: #selector(gotoTargetVC), for: .touchUpInside)
     }
 }
-
-extension UIView {
-    static func == (lhs:UIView, rhs:UIView) -> Bool {
-        return lhs.backgroundColor?.cgColor == rhs.backgroundColor?.cgColor
+extension UIViewController {
+    func printSth(){
+        print("9999999999");
     }
 }
+
+//extension UIView {
+//    static func == (lhs:UIView, rhs:UIView) -> Bool {
+//        return lhs.backgroundColor?.cgColor == rhs.backgroundColor?.cgColor
+//    }
+//}
 
 

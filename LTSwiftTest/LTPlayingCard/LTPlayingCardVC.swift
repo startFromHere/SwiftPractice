@@ -17,7 +17,8 @@ class LTPlayingCardVC: UIViewController {
     lazy var cardBehavior = CardBehavior(in: animator)
     
     private var faceUpCardViews: [PlayingCardView] {
-        return cardViews.filter{ $0.isFaceUp }
+        return cardViews.filter{ $0.isFaceUp && !$0.isHidden && $0.transform != CGAffineTransform.identity.scaledBy(x: 3.0, y: 3.0)
+        }
     }
     
     private var faceUpCardViewsMatch: Bool {
@@ -47,7 +48,7 @@ class LTPlayingCardVC: UIViewController {
     @objc func flipCard(_ recognizer:UITapGestureRecognizer){
         switch recognizer.state {
         case .ended:
-            if let chosenCardView = recognizer.view as? PlayingCardView {
+            if let chosenCardView = recognizer.view as? PlayingCardView,faceUpCardViews.count < 2 {
                 lastChosenCardView = chosenCardView
                 cardBehavior.removeItem(chosenCardView)
                 UIView.transition(with: chosenCardView,
