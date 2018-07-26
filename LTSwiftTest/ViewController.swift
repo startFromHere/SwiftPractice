@@ -16,22 +16,14 @@ class ViewController: LTBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configUI()
-        
-        var playerOne: UIViewController = UIViewController()
-//        playerOne = nil
-        
-        if playerOne.printSth() == nil {
-            print("ddddd")
-        } else {
-            print("qqqqq")
-        }
-        print(playerOne.printSth())
     }
 
     @objc func gotoTargetVC() {
 //        let targetVC = LTDynamicAnimatorVC()
-        let targetVC = LTPlayingCardVC()
-        self.navigationController?.pushViewController(targetVC, animated: true)
+//        let targetVC = LTPlayingCardVC()
+//        self.navigationController?.pushViewController(targetVC, animated: true)
+        self.performSegue(withIdentifier: "LTFoodMainVC", sender: nil)
+        
     }
     
     func configUI(){
