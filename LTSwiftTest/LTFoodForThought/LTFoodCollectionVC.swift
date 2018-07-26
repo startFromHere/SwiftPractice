@@ -8,20 +8,28 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class LTFoodCollectionVC: UICollectionViewController {
+    
+    private var useSections = true
+    
+    private func food(at indexPath: IndexPath) -> String {
+        if useSections {
+            let category = FoodModel.categories[indexPath.section]
+            return FoodModel.food[category]?[indexPath.item] ?? ""
+        } else {
+            return FoodModel.all[indexPath.item]
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        flowLayout?.itemSize = UICollectionViewFlowLayoutAutomaticSize
+        flowLayout?.estimatedItemSize = CGSize(width: 100, height: 120)
+    }
+    
+    private var flowLayout: UICollectionViewFlowLayout? {
+        return collectionView?.collectionViewLayout as? UICollectionViewFlowLayout
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,21 +51,41 @@ class LTFoodCollectionVC: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return useSections ? FoodModel.categories.count : 0
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        if useSections {
+            let category = FoodModel.categories[section]
+            return FoodModel.food[category]?.count ?? 0
+        } else {
+            return FoodModel.all.count
+        }
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCollectionCell", for: indexPath)
+        
+        if let foodCell = cell as? FoodCollectionCell {
+            foodCell.emojiLabel.text = FoodModel.emoji[food(at: indexPath)]
+            foodCell.nameLabel.text = food(at: indexPath)
+        }
     
         return cell
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionElementKindSectionHeader {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "CollectionHeader", for: indexPath)
+            if let foodHeader = header as? CollectionReusableHeadView {
+                foodHeader.label.text = useSections ? FoodModel.categories[indexPath.section] : "Food"
+            }
+            return header
+        } else {
+            assert(false, "FoodCollectionViewController asked for supplementary element of unknown kind \(kind).")
+        }
     }
 
     // MARK: UICollectionViewDelegate
