@@ -366,8 +366,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "setupMutiPeer()"
-            landmarkType = "7">
+            landmarkName = "LTPeerToPeerVC"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
