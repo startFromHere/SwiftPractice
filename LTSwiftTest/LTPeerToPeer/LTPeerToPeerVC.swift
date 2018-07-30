@@ -9,8 +9,6 @@
 import UIKit
 import MultipeerConnectivity
 
-//在 testBranch 中显示
-
 class LTPeerToPeerVC: LTBaseVC, MCSessionDelegate,MCBrowserViewControllerDelegate,UITextViewDelegate {
     
     var browserVC: MCBrowserViewController!
