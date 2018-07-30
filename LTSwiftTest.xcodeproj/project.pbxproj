@@ -34,6 +34,7 @@
 		CF9F4A6620034A90003EDC38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9F4A6420034A90003EDC38 /* LaunchScreen.storyboard */; };
 		CF9F4A7120034A90003EDC38 /* LTSwiftTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F4A7020034A90003EDC38 /* LTSwiftTestTests.swift */; };
 		CF9F4A7C20034A90003EDC38 /* LTSwiftTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F4A7B20034A90003EDC38 /* LTSwiftTestUITests.swift */; };
+		CFCA6B95210F188E00FF3CD0 /* AlgorithVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCA6B94210F188E00FF3CD0 /* AlgorithVC.swift */; };
 		CFF1CB9B2109754F0091AEEB /* LTFoodTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1CB9A2109754F0091AEEB /* LTFoodTableVC.swift */; };
 		CFF1CB9E210976610091AEEB /* LTFoodCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1CB9C210976610091AEEB /* LTFoodCollectionVC.swift */; };
 		CFF1CBA121097C5F0091AEEB /* LTFoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1CBA021097C5F0091AEEB /* LTFoodModel.swift */; };
@@ -91,6 +92,7 @@
 		CF9F4A7720034A90003EDC38 /* LTSwiftTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTSwiftTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF9F4A7B20034A90003EDC38 /* LTSwiftTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTSwiftTestUITests.swift; sourceTree = "<group>"; };
 		CF9F4A7D20034A90003EDC38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCA6B94210F188E00FF3CD0 /* AlgorithVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithVC.swift; sourceTree = "<group>"; };
 		CFF1CB9A2109754F0091AEEB /* LTFoodTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTFoodTableVC.swift; sourceTree = "<group>"; };
 		CFF1CB9C210976610091AEEB /* LTFoodCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTFoodCollectionVC.swift; sourceTree = "<group>"; };
 		CFF1CBA021097C5F0091AEEB /* LTFoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTFoodModel.swift; sourceTree = "<group>"; };
@@ -128,13 +130,6 @@
 				CF2DF179210EB2D60046C125 /* LTPeerToPeerVC.swift */,
 			);
 			path = LTPeerToPeer;
-			sourceTree = "<group>";
-		};
-		CF2DF17B210EF02B0046C125 /* OOP to POP */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "OOP to POP";
 			sourceTree = "<group>";
 		};
 		CF3191D020EA17BB009CAC90 /* LTFlipCard */ = {
@@ -194,7 +189,7 @@
 		CF9F4A5A20034A90003EDC38 /* LTSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
-				CF2DF17B210EF02B0046C125 /* OOP to POP */,
+				CFCA6B93210F183A00FF3CD0 /* Algorith */,
 				CF2DF178210EB2300046C125 /* LTPeerToPeer */,
 				CF9F4A5F20034A90003EDC38 /* Main.storyboard */,
 				CFF1CB99210974D20091AEEB /* LTFoodForThought */,
@@ -230,6 +225,14 @@
 				CF9F4A7D20034A90003EDC38 /* Info.plist */,
 			);
 			path = LTSwiftTestUITests;
+			sourceTree = "<group>";
+		};
+		CFCA6B93210F183A00FF3CD0 /* Algorith */ = {
+			isa = PBXGroup;
+			children = (
+				CFCA6B94210F188E00FF3CD0 /* AlgorithVC.swift */,
+			);
+			path = Algorith;
 			sourceTree = "<group>";
 		};
 		CFF1CB99210974D20091AEEB /* LTFoodForThought */ = {
@@ -396,6 +399,7 @@
 				CF075737210A07A80049A48E /* FoodCollectionCell.swift in Sources */,
 				CFF1CBA32109CCDC0091AEEB /* FoodTableViewCell.swift in Sources */,
 				CF70AB1920E37DD300C177A4 /* LTQRCodeVC.swift in Sources */,
+				CFCA6B95210F188E00FF3CD0 /* AlgorithVC.swift in Sources */,
 				CF08CCA220E8CDB800A3E1D6 /* LTFlipCardsVC.swift in Sources */,
 				CF680EBE20F4A02200909135 /* CardBehavior.swift in Sources */,
 				CF680EB320F0F67E00909135 /* LTPlayingCardVC.swift in Sources */,

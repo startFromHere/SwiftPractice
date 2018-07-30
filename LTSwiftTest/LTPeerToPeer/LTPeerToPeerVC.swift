@@ -9,8 +9,6 @@
 import UIKit
 import MultipeerConnectivity
 
-//在 test branch 中清理多余代码
-
 class LTPeerToPeerVC: LTBaseVC, MCSessionDelegate,MCBrowserViewControllerDelegate,UITextViewDelegate {
     
     var browserVC: MCBrowserViewController!
