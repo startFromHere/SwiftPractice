@@ -24,27 +24,6 @@ class LTFoodTableVC: UITableViewController {
     private func emoji(at indexpath: IndexPath) -> String {
         return FoodModel.emoji[food(at: indexpath)] ?? ""
     }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell
-        let foodName = food(at: indexPath)
-        
-        if FoodModel.descriptions[foodName]?.count ?? 0 > 0 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "FoodTableViewCell", for: indexPath)
-            if let foodTableCell = cell as? FoodTableViewCell {
-                foodTableCell.nameLabel.text = foodName
-                foodTableCell.categoryLabel.text = "Category" + FoodModel.category(of: foodName)
-                foodTableCell.detailLabel.text = FoodModel.descriptions[foodName]
-                foodTableCell.imageLabel.text = emoji(at: indexPath)
-            }
-        } else {
-            cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath)
-            cell.textLabel?.text = foodName
-            cell.detailTextLabel?.text = emoji(at: indexPath)
-        }
-        
-        return cell
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,15 +51,30 @@ class LTFoodTableVC: UITableViewController {
         }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        var cell: UITableViewCell
+        let foodName = food(at: indexPath)
+        
+        if FoodModel.descriptions[foodName]?.count ?? 0 > 0 {
+            cell = tableView.dequeueReusableCell(withIdentifier: "FoodTableViewCell", for: indexPath)
+            if let foodTableCell = cell as? FoodTableViewCell {
+                foodTableCell.nameLabel.text = foodName
+                foodTableCell.categoryLabel.text = "Category" + FoodModel.category(of: foodName)
+                foodTableCell.detailLabel.text = FoodModel.descriptions[foodName]
+                foodTableCell.imageLabel.text = emoji(at: indexPath)
+            }
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "FoodCell", for: indexPath)
+            cell.textLabel?.text = foodName
+            cell.detailTextLabel?.text = emoji(at: indexPath)
+        }
+        
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return userSections ? FoodModel.categories[section] : nil
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -90,17 +84,16 @@ class LTFoodTableVC: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            FoodModel.delete(food(at: indexPath))
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
     /*
     // Override to support rearranging the table view.
