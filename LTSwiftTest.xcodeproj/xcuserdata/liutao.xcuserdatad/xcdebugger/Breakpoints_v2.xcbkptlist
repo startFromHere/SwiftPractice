@@ -334,7 +334,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "messageReciption(_:peer:)"
+            landmarkName = "sendMessage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -350,7 +350,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "96"
             endingLineNumber = "96"
-            landmarkName = "session(_:didReceive:fromPeer:)"
+            landmarkName = "session(_:peer:didChange:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -366,7 +366,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "setupMutiPeer()"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
