@@ -19,7 +19,7 @@ class ViewController: LTBaseVC {
     }
 
     @objc func gotoTargetVC() {
-        let targetVC = LTPeerToPeerVC()
+        let targetVC = AlgorithVC()
         self.navigationController?.pushViewController(targetVC, animated: true)
 //        self.performSegue(withIdentifier: "LTFoodMainVC", sender: nil)
         
