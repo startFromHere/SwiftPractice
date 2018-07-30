@@ -19,10 +19,9 @@ class ViewController: LTBaseVC {
     }
 
     @objc func gotoTargetVC() {
-//        let targetVC = LTDynamicAnimatorVC()
-//        let targetVC = LTPlayingCardVC()
-//        self.navigationController?.pushViewController(targetVC, animated: true)
-        self.performSegue(withIdentifier: "LTFoodMainVC", sender: nil)
+        let targetVC = LTPeerToPeerVC()
+        self.navigationController?.pushViewController(targetVC, animated: true)
+//        self.performSegue(withIdentifier: "LTFoodMainVC", sender: nil)
         
     }
     
