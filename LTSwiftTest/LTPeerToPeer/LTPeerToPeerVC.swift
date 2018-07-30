@@ -9,7 +9,8 @@
 import UIKit
 import MultipeerConnectivity
 
-//在 testBranch 中显示
+//在 test branch 中显示
+//test 中第二次修改
 
 class LTPeerToPeerVC: LTBaseVC, MCSessionDelegate,MCBrowserViewControllerDelegate,UITextViewDelegate {
     
