@@ -189,9 +189,9 @@
 		CF9F4A5A20034A90003EDC38 /* LTSwiftTest */ = {
 			isa = PBXGroup;
 			children = (
+				CF9F4A5F20034A90003EDC38 /* Main.storyboard */,
 				CFCA6B93210F183A00FF3CD0 /* Algorith */,
 				CF2DF178210EB2300046C125 /* LTPeerToPeer */,
-				CF9F4A5F20034A90003EDC38 /* Main.storyboard */,
 				CFF1CB99210974D20091AEEB /* LTFoodForThought */,
 				CF680EAE20EF190A00909135 /* LTPlayingCard */,
 				CF70AB1A20E4D81D00C177A4 /* LTBasicAgenda */,
