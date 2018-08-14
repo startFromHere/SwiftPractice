@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -61,7 +62,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nji-Lu-ARA">
-                                                    <rect key="frame" x="27" y="12" width="42" height="21"/>
+                                                    <rect key="frame" x="30" y="12" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -69,8 +70,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="SZF-yP-B3f" secondAttribute="trailing" constant="15" id="8vk-ZD-Flx"/>
+                                                <constraint firstItem="nji-Lu-ARA" firstAttribute="leading" secondItem="qQf-zL-tf6" secondAttribute="leading" constant="30" id="D8W-bp-VKG"/>
                                                 <constraint firstItem="nji-Lu-ARA" firstAttribute="centerY" secondItem="qQf-zL-tf6" secondAttribute="centerY" id="keI-ES-xKp"/>
-                                                <constraint firstItem="nji-Lu-ARA" firstAttribute="leading" secondItem="qQf-zL-tf6" secondAttribute="leading" constant="27" id="rlj-k9-WhR"/>
                                                 <constraint firstItem="SZF-yP-B3f" firstAttribute="centerY" secondItem="nji-Lu-ARA" secondAttribute="centerY" id="zLq-6x-CAd"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -82,10 +83,11 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVX-aJ-5JR">
-                                <rect key="frame" x="221" y="199" width="120" height="66"/>
+                                <rect key="frame" x="275" y="199" width="66" height="66"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="9KB-YO-6Jp"/>
-                                    <constraint firstAttribute="width" constant="120" id="tVy-V1-7jI"/>
+                                    <constraint firstAttribute="width" secondItem="eVX-aJ-5JR" secondAttribute="height" id="aRQ-W8-zo9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Start">
@@ -96,10 +98,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-Ql-PFk">
-                                <rect key="frame" x="54" y="199" width="120" height="66"/>
+                                <rect key="frame" x="54" y="199" width="66" height="66"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="MgJ-Mj-fmb"/>
-                                    <constraint firstAttribute="width" constant="120" id="nRn-jI-a53"/>
+                                    <constraint firstAttribute="width" secondItem="qSn-Ql-PFk" secondAttribute="height" id="g8S-cf-ZUe"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Lap"/>
@@ -127,6 +130,8 @@
                     <navigationItem key="navigationItem" title="Stopwatch" id="gcp-rj-kk6"/>
                     <connections>
                         <outlet property="lapLabel" destination="AXU-AW-xfj" id="EwP-az-WTA"/>
+                        <outlet property="lapResetBtn" destination="qSn-Ql-PFk" id="Zud-rx-Gvo"/>
+                        <outlet property="playPauseBtn" destination="eVX-aJ-5JR" id="9Lb-y3-Hx9"/>
                         <outlet property="tableView" destination="sKt-yC-hUZ" id="hjz-lF-i27"/>
                         <outlet property="timeLabel" destination="roD-L4-NGY" id="MBF-BJ-lOv"/>
                     </connections>
