@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var lapResetBtn: UIButton!
+    
+    @IBOutlet weak var playPauseBtn: UIButton!
+    
     let mainStopwatch = Stopwatch()
     let lapStopwatch = Stopwatch()
 
@@ -24,6 +28,15 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let initCircleBtn:(UIButton) -> Void = {button in
+            button.layer.cornerRadius = 0.5 * button.bounds.size.width
+            button.backgroundColor = UIColor.white
+        }
+        
+        initCircleBtn(lapResetBtn)
+        initCircleBtn(playPauseBtn)
+        
+        lapResetBtn.isEnabled = false
     }
     
     override var shouldAutorotate: Bool{
@@ -33,13 +46,13 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
     }
-    
-    
 
     @IBAction func lap(_ sender: Any) {
         if !isPlay {
             resetLapTimer()
             resetMainTimer()
+            changeBtn(button: lapResetBtn, title: "Lap", titleColor: UIColor.lightGray)
+            lapResetBtn.isEnabled = false
         } else {
             if let timerLabelText = timeLabel.text {
                 laps.append(timerLabelText)
@@ -54,20 +67,31 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     @IBAction func start(_ sender: Any) {
+        lapResetBtn.isEnabled = true
+        changeBtn(button: lapResetBtn, title: "Lap", titleColor: UIColor.black)
         if !isPlay {
             unowned let weakSelf = self
-            mainStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.035, target: self, selector: #selector(ViewController.updateMainTimer), userInfo: nil, repeats: true)
-            lapStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.035, target: self, selector: Selector.updateLapTimer, userInfo: nil, repeats: true)
+            mainStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.035, target: weakSelf, selector: #selector(ViewController.updateMainTimer), userInfo: nil, repeats: true)
+            lapStopwatch.timer = Timer.scheduledTimer(timeInterval: 0.035, target: weakSelf, selector: Selector.updateLapTimer, userInfo: nil, repeats: true)
             
             RunLoop.current.add(mainStopwatch.timer, forMode: .commonModes)
             RunLoop.current.add(lapStopwatch.timer, forMode: .commonModes)
             
             isPlay = true
+            changeBtn(button: playPauseBtn, title: "Stop", titleColor: UIColor.red)
         } else {
+            playPauseBtn.setTitle("Start", for: .normal)
             mainStopwatch.timer.invalidate()
             lapStopwatch.timer.invalidate()
             isPlay = false
+            changeBtn(button: playPauseBtn, title: "Start", titleColor: UIColor.green)
+            changeBtn(button: lapResetBtn, title: "Reset", titleColor: UIColor.black)
         }
+    }
+    
+    func changeBtn(button:UIButton, title:String, titleColor:UIColor){
+        button.setTitle(title, for: .normal)
+        button.setTitleColor(titleColor, for: .normal)
     }
     
     func resetMainTimer(){
@@ -117,7 +141,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     // MARK: - UITableview datasource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LapCell", for: indexPath)
-        cell.textLabel?.text = laps[indexPath.row]
+//        cell.textLabel?.text = laps[indexPath.row]
         
         if let labelNum = cell.viewWithTag(11) as? UILabel {
             labelNum.text = "Lap\(laps.count - indexPath.row)"
