@@ -8,12 +8,16 @@
 
 import UIKit
 
+var todos: [ToDoItem] = []
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var item = ToDoItem(with: "111", image: "ddd", title: "ada", date: Date.init(timeIntervalSinceReferenceDate: NSTimeIntervalSince1970))
+        navigationItem.leftBarButtonItem = editButtonItem
+        
+        todos = [ToDoItem(id: "1", image: <#T##String#>, title: <#T##String#>, date: <#T##Date#>)]
         
     }
     

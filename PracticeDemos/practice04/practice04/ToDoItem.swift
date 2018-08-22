@@ -14,7 +14,7 @@ class ToDoItem:NSObject {
     var title: String
     var date: Date
     
-    init(with id: String, image: String, title: String, date: Date) {
+    init(id: String, image: String, title: String, date: Date) {
         self.id = id
         self.image = image
         self.title = title

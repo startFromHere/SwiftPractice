@@ -15,6 +15,8 @@
 		CF081A77212AD82B0029861C /* practice04Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF081A76212AD82B0029861C /* practice04Tests.swift */; };
 		CF081A82212AD82B0029861C /* practice04UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF081A81212AD82B0029861C /* practice04UITests.swift */; };
 		CF081A90212AD9E80029861C /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF081A8F212AD9E80029861C /* ToDoItem.swift */; };
+		CF081A92212D05B20029861C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF081A91212D05B20029861C /* Utils.swift */; };
+		CF081A94212D36150029861C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF081A93212D36150029861C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CF081A81212AD82B0029861C /* practice04UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practice04UITests.swift; sourceTree = "<group>"; };
 		CF081A83212AD82B0029861C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF081A8F212AD9E80029861C /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		CF081A91212D05B20029861C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		CF081A93212D36150029861C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 		CF081A60212AD82A0029861C /* practice04 */ = {
 			isa = PBXGroup;
 			children = (
+				CF081A91212D05B20029861C /* Utils.swift */,
 				CF081A61212AD82A0029861C /* AppDelegate.swift */,
 				CF081A63212AD82A0029861C /* ViewController.swift */,
+				CF081A93212D36150029861C /* DetailViewController.swift */,
 				CF081A8F212AD9E80029861C /* ToDoItem.swift */,
 				CF081A65212AD82A0029861C /* Main.storyboard */,
 				CF081A68212AD82B0029861C /* Assets.xcassets */,
@@ -261,7 +267,9 @@
 			files = (
 				CF081A64212AD82A0029861C /* ViewController.swift in Sources */,
 				CF081A62212AD82A0029861C /* AppDelegate.swift in Sources */,
+				CF081A94212D36150029861C /* DetailViewController.swift in Sources */,
 				CF081A90212AD9E80029861C /* ToDoItem.swift in Sources */,
+				CF081A92212D05B20029861C /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
