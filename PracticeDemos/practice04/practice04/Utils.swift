@@ -8,20 +8,15 @@
 
 import Foundation
 
-struct defaultFormatter {
-    static var formatter = DateFormatter() {
-        didSet {
-            formatter.dateFormat = "YYYY-MM-dd"
-        }
-    }
-
-    static func stringFromDate(date: Date) -> String {
-        return formatter.string(from: date)
-    }
-    
-    static func dateFromString(string: String) -> Date {
-        return formatter.date(from: string) ?? Date()
-    }
+func dateFromString(_ string: String) -> Date? {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
+    return dateFormatter.date(from: string)
 }
 
+func stringFromDate(_ date: Date) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
+    return dateFormatter.string(from: date)
+}
 
