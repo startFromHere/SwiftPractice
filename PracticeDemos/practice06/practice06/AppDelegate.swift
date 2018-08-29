@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UISplitViewControllerDeleg
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //a new fix on test branch
+        //fix again
         let splitViewController = window?.rootViewController as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
         navigationController.topViewController?.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
