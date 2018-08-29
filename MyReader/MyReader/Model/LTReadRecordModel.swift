@@ -51,6 +51,17 @@ class LTReadRecordModel: NSObject {
         }
     }
     
+    func copySelf() -> LTReadRecordModel {
+        let recordModel = LTReadRecordModel()
+        recordModel.bookID = bookID
+        
+        recordModel.readChapterModel = readChapterModel
+        
+        recordModel.page = page
+        
+        return recordModel
+    }
+    
     func save() {
         readKeyedArchiver(folderName: bookID, fileName: (bookID + "ReadRecord"), object: self)
     }

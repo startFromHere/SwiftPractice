@@ -18,7 +18,7 @@ class LTMainVC: LTBaseVC {
     
     func initViwes() {
         let bookBtn:UIButton = UIButton.init(frame: CGRect(x: 100, y: 200, width: 200, height: 60))
-        bookBtn.setTitle("麦田里的守望者", for: UIControlState.normal)
+        bookBtn.setTitle("求魔", for: UIControlState.normal)
         bookBtn.addTarget(self, action: #selector(startToRead), for: .touchUpInside)
         view.addSubview(bookBtn)
     }
@@ -31,6 +31,7 @@ class LTMainVC: LTBaseVC {
         LTParser.parseLocalURL(url: url!) { (bookModel) in
             MBProgressHUD.hide()
             
+            let readController = LTBaseVC()
             
         }
     }

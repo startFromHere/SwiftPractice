@@ -4,20 +4,27 @@ PODS:
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
-  - UITableView+FDTemplateLayoutCell (1.6)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
 
 DEPENDENCIES:
   - MBProgressHUD
   - MJRefresh
   - SDWebImage
-  - UITableView+FDTemplateLayoutCell
+  - "UITableView+FDTemplateLayoutCell"
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MBProgressHUD
+    - MJRefresh
+    - SDWebImage
+    - "UITableView+FDTemplateLayoutCell"
 
 SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
-  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
 PODFILE CHECKSUM: 5afa4b3bebe7281bfa51fd91505310987432bf83
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

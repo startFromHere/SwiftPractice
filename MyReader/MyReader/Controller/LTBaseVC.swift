@@ -9,6 +9,24 @@
 import UIKit
 
 class LTBaseVC: UIViewController {
+    
+    var isStatusBarLightContent:Bool = false {
+
+        
+        didSet{
+            if isStatusBarLightContent != oldValue {
+                setStatusBarStyle()
+            }
+        }
+    }
+    
+    private func setStatusBarStyle() {
+        if isStatusBarLightContent {
+            UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
+        } else {
+            UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: true)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

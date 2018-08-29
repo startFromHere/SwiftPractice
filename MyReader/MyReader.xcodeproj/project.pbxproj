@@ -26,6 +26,10 @@
 		CF6F3CE620624BE70086EF69 /* LTReadMarkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6F3CE520624BE70086EF69 /* LTReadMarkModel.swift */; };
 		CF7B0004201B25FD00EBC4E8 /* LTParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B0003201B25FD00EBC4E8 /* LTParser.swift */; };
 		CF7B0006201B271900EBC4E8 /* LTBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B0005201B271900EBC4E8 /* LTBookModel.swift */; };
+		CFD8E32C2136E58800C0F485 /* LTReadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E32B2136E58800C0F485 /* LTReadController.swift */; };
+		CFD8E32F2136E70900C0F485 /* LTReadOpreration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E32E2136E70900C0F485 /* LTReadOpreration.swift */; };
+		CFD8E3312136E7EA00C0F485 /* LTCoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E3302136E7EA00C0F485 /* LTCoverVC.swift */; };
+		CFD8E3332136E88400C0F485 /* LTReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E3322136E88400C0F485 /* LTReadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +79,10 @@
 		CF6F3CE520624BE70086EF69 /* LTReadMarkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTReadMarkModel.swift; sourceTree = "<group>"; };
 		CF7B0003201B25FD00EBC4E8 /* LTParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTParser.swift; sourceTree = "<group>"; };
 		CF7B0005201B271900EBC4E8 /* LTBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTBookModel.swift; sourceTree = "<group>"; };
+		CFD8E32B2136E58800C0F485 /* LTReadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTReadController.swift; sourceTree = "<group>"; };
+		CFD8E32E2136E70900C0F485 /* LTReadOpreration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTReadOpreration.swift; sourceTree = "<group>"; };
+		CFD8E3302136E7EA00C0F485 /* LTCoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCoverVC.swift; sourceTree = "<group>"; };
+		CFD8E3322136E88400C0F485 /* LTReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTReadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,14 +153,15 @@
 		CF2E1A1F2019F61800B92A45 /* MyReader */ = {
 			isa = PBXGroup;
 			children = (
+				CFD8E32D2136E6BB00C0F485 /* Controller */,
 				CF2E79C02136913D00886730 /* Extension */,
 				CF3C29B6201ECAB80092E96C /* Base */,
 				CF3C29AD201EBB8F0092E96C /* EXT */,
 				CF7B0002201B25E000EBC4E8 /* Parser */,
 				CF7B0001201B1C6A00EBC4E8 /* Model */,
 				CF2E1A202019F61800B92A45 /* AppDelegate.swift */,
-				CF6E9E07201B119C00E4BB13 /* LTBaseVC.swift */,
 				CF2E1A4E201A022100B92A45 /* LTMainVC.swift */,
+				CFD8E32B2136E58800C0F485 /* LTReadController.swift */,
 				CF2E1A242019F61800B92A45 /* Main.storyboard */,
 				CF2E1A272019F61800B92A45 /* Assets.xcassets */,
 				CF2E1A292019F61800B92A45 /* LaunchScreen.storyboard */,
@@ -226,6 +235,17 @@
 			path = Parser;
 			sourceTree = "<group>";
 		};
+		CFD8E32D2136E6BB00C0F485 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CF6E9E07201B119C00E4BB13 /* LTBaseVC.swift */,
+				CFD8E32E2136E70900C0F485 /* LTReadOpreration.swift */,
+				CFD8E3302136E7EA00C0F485 /* LTCoverVC.swift */,
+				CFD8E3322136E88400C0F485 /* LTReadVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,7 +257,6 @@
 				CF2E1A192019F61800B92A45 /* Sources */,
 				CF2E1A1A2019F61800B92A45 /* Frameworks */,
 				CF2E1A1B2019F61800B92A45 /* Resources */,
-				A2BDE57A601DDA5E22D72A17 /* [CP] Embed Pods Frameworks */,
 				57166E0A0D15DC2CEC06D107 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -372,26 +391,11 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyReader/Pods-MyReader-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2BDE57A601DDA5E22D72A17 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyReader/Pods-MyReader-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D30E2943105702D73441CFA5 /* [CP] Check Pods Manifest.lock */ = {
@@ -423,13 +427,17 @@
 				CF2E79C3213691F300886730 /* MBProgressHUD+DZM.m in Sources */,
 				CF3C29B2201EBDAF0092E96C /* String+LTAdd.swift in Sources */,
 				CF6F3CE2206242CE0086EF69 /* LTChapterListModel.swift in Sources */,
+				CFD8E3312136E7EA00C0F485 /* LTCoverVC.swift in Sources */,
 				CF2E1A4F201A022100B92A45 /* LTMainVC.swift in Sources */,
 				CF3C29B5201ECAAD0092E96C /* LTGlobal.swift in Sources */,
+				CFD8E32F2136E70900C0F485 /* LTReadOpreration.swift in Sources */,
 				CF2E1A212019F61800B92A45 /* AppDelegate.swift in Sources */,
 				CF6F3CE420624B2A0086EF69 /* LTReadRecordModel.swift in Sources */,
 				CF7B0004201B25FD00EBC4E8 /* LTParser.swift in Sources */,
 				CF7B0006201B271900EBC4E8 /* LTBookModel.swift in Sources */,
 				CF6F3CE620624BE70086EF69 /* LTReadMarkModel.swift in Sources */,
+				CFD8E32C2136E58800C0F485 /* LTReadController.swift in Sources */,
+				CFD8E3332136E88400C0F485 /* LTReadVC.swift in Sources */,
 				CF6E9E08201B119C00E4BB13 /* LTBaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

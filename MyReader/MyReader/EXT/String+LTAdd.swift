@@ -19,6 +19,15 @@ extension String {
         return NSString(string: self).substring(with: range)
     }
     
+    /**
+     String 转换 integerValue
+     
+     - returns: Int
+     */
+    func integerValue() ->Int{
+        return NSString(string: self).integerValue
+    }
+    
     var length:Int {
         get{ return (self as NSString).length}
     }

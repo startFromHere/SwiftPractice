@@ -239,7 +239,7 @@
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     
     // 隐藏灰色背景
-    hud.hiddenBackgroundHUD = YES;
+//    hud.hiddenBackgroundHUD = YES;
     
     // 设置图片
     hud.customView = customView;
