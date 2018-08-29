@@ -1,0 +1,9 @@
+platform:ios, '8.0'
+
+target "MyReader" do
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'MJRefresh'
+
+end
