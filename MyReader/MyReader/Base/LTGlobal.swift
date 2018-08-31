@@ -10,6 +10,14 @@ import Foundation
 
 private let bookFolderName : String = "BookLib"
 
+func RGB(_ r:CGFloat, g:CGFloat, b:CGFloat) -> UIColor {
+    return RGBA(r, g: g, b: b, a: 1.0)
+}
+
+func RGBA(_ r:CGFloat, g:CGFloat, b:CGFloat, a:CGFloat) -> UIColor {
+    return UIColor(red: r, green: g, blue: b, alpha: a)
+}
+
 func getBookID(byUrl url:URL) -> String {
     return url.path.lastPathComponent().stringByDeletingPathExtension()
 }

@@ -33,10 +33,28 @@ class LTReadController: LTBaseVC {
         super.viewDidLoad()
 
         isStatusBarLightContent = true
-        readOperation = LTReadOpreration
+        readOperation = LTReadOpreration(vc: self)
+        
+        creatPageController(readOperation.getCurrentReadViewController(isUpdateFont: true, isSave: true))
+        
+        
     }
     
     func creatPageController(_ displayController:UIViewController?) {
+        if pageViewController != nil {
+            pageViewController?.view.removeFromSuperview()
+            pageViewController?.removeFromParentViewController()
+            pageViewController = nil
+        }
         
+        if coverController != nil {
+            coverController?.view.removeFromSuperview()
+            coverController?.removeFromParentViewController()
+            coverController = nil
+        }
+        
+        if LTReadConfigure.shared(). {
+            
+        }
     }
 }
