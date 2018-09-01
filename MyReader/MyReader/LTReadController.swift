@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LTReadController: LTBaseVC {
+class LTReadController: LTBaseVC,UIPageViewControllerDelegate,UIPageViewControllerDataSource {
     
     @objc var readModel:LTBookModel!
     
@@ -23,7 +23,7 @@ class LTReadController: LTBaseVC {
     private(set) var pageViewController:UIPageViewController?
     
     ///翻页控制器(覆盖、上下)
-    private(set) var coverController:LTCover?
+    private(set) var coverController:LTcoverController?
     
     ///当前显示的阅读控制器
     private(set) var currentReadVC:LTReadVC?
@@ -53,8 +53,16 @@ class LTReadController: LTBaseVC {
             coverController = nil
         }
         
-        if LTReadConfigure.shared(). {
-            
+        if LTReadConfigure.shared().effectType == LTEffectType.simulation.rawValue {
+            let options = [UIPageViewControllerOptionSpineLocationKey:NSNumber(value: UIPageViewControllerSpineLocation.min.rawValue as Int)]
+            pageViewController!.delegate = self
+            pageViewController!.dataSource = self
+            view.insertSubview(pageViewController!.view, at: 0)
+            addChildViewController(pageViewController!)
+            pageViewController?.setViewControllers((displayController != nil ? [displayController!] : nil), direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        } else {
+            coverController = LTcoverController()
+            coverController.de
         }
     }
 }
