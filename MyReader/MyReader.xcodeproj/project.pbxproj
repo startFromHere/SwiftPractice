@@ -24,6 +24,7 @@
 		CF2E79D121393F3F00886730 /* LTGlobalProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2E79D021393F3F00886730 /* LTGlobalProperty.swift */; };
 		CF3C29B2201EBDAF0092E96C /* String+LTAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C29B1201EBDAF0092E96C /* String+LTAdd.swift */; };
 		CF3C29B5201ECAAD0092E96C /* LTGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3C29B4201ECAAD0092E96C /* LTGlobal.swift */; };
+		CF4C90E4213A6524006F90D5 /* DZMCoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4C90E2213A6523006F90D5 /* DZMCoverController.m */; };
 		CF680EC020F5F0DA00909135 /* LTChapterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF680EBF20F5F0DA00909135 /* LTChapterModel.swift */; };
 		CF6E9E08201B119C00E4BB13 /* LTBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6E9E07201B119C00E4BB13 /* LTBaseVC.swift */; };
 		CF6F3CE02062422C0086EF69 /* 求魔.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF6F3CDF2062422B0086EF69 /* 求魔.txt */; };
@@ -34,7 +35,7 @@
 		CF7B0006201B271900EBC4E8 /* LTBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B0005201B271900EBC4E8 /* LTBookModel.swift */; };
 		CFD8E32C2136E58800C0F485 /* LTReadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E32B2136E58800C0F485 /* LTReadController.swift */; };
 		CFD8E32F2136E70900C0F485 /* LTReadOpreration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E32E2136E70900C0F485 /* LTReadOpreration.swift */; };
-		CFD8E3312136E7EA00C0F485 /* LTCoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E3302136E7EA00C0F485 /* LTCoverVC.swift */; };
+		CFD8E3312136E7EA00C0F485 /* LTCoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E3302136E7EA00C0F485 /* LTCoverController.swift */; };
 		CFD8E3332136E88400C0F485 /* LTReadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD8E3322136E88400C0F485 /* LTReadVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +84,8 @@
 		CF2E79D021393F3F00886730 /* LTGlobalProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTGlobalProperty.swift; sourceTree = "<group>"; };
 		CF3C29B1201EBDAF0092E96C /* String+LTAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+LTAdd.swift"; sourceTree = "<group>"; };
 		CF3C29B4201ECAAD0092E96C /* LTGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTGlobal.swift; sourceTree = "<group>"; };
+		CF4C90E2213A6523006F90D5 /* DZMCoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMCoverController.m; sourceTree = "<group>"; };
+		CF4C90E3213A6523006F90D5 /* DZMCoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMCoverController.h; sourceTree = "<group>"; };
 		CF680EBF20F5F0DA00909135 /* LTChapterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTChapterModel.swift; sourceTree = "<group>"; };
 		CF6E9E07201B119C00E4BB13 /* LTBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTBaseVC.swift; sourceTree = "<group>"; };
 		CF6F3CDF2062422B0086EF69 /* 求魔.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "求魔.txt"; sourceTree = "<group>"; };
@@ -93,7 +96,7 @@
 		CF7B0005201B271900EBC4E8 /* LTBookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTBookModel.swift; sourceTree = "<group>"; };
 		CFD8E32B2136E58800C0F485 /* LTReadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTReadController.swift; sourceTree = "<group>"; };
 		CFD8E32E2136E70900C0F485 /* LTReadOpreration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTReadOpreration.swift; sourceTree = "<group>"; };
-		CFD8E3302136E7EA00C0F485 /* LTCoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCoverVC.swift; sourceTree = "<group>"; };
+		CFD8E3302136E7EA00C0F485 /* LTCoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTCoverController.swift; sourceTree = "<group>"; };
 		CFD8E3322136E88400C0F485 /* LTReadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTReadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,9 +266,11 @@
 		CFD8E32D2136E6BB00C0F485 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				CF4C90E3213A6523006F90D5 /* DZMCoverController.h */,
+				CF4C90E2213A6523006F90D5 /* DZMCoverController.m */,
 				CF6E9E07201B119C00E4BB13 /* LTBaseVC.swift */,
 				CFD8E32E2136E70900C0F485 /* LTReadOpreration.swift */,
-				CFD8E3302136E7EA00C0F485 /* LTCoverVC.swift */,
+				CFD8E3302136E7EA00C0F485 /* LTCoverController.swift */,
 				CFD8E3322136E88400C0F485 /* LTReadVC.swift */,
 				CF2E79C92139326D00886730 /* LTReadConfigure.swift */,
 			);
@@ -456,7 +461,7 @@
 				CF3C29B2201EBDAF0092E96C /* String+LTAdd.swift in Sources */,
 				CF2E79D121393F3F00886730 /* LTGlobalProperty.swift in Sources */,
 				CF6F3CE2206242CE0086EF69 /* LTChapterListModel.swift in Sources */,
-				CFD8E3312136E7EA00C0F485 /* LTCoverVC.swift in Sources */,
+				CFD8E3312136E7EA00C0F485 /* LTCoverController.swift in Sources */,
 				CF2E1A4F201A022100B92A45 /* LTMainVC.swift in Sources */,
 				CF3C29B5201ECAAD0092E96C /* LTGlobal.swift in Sources */,
 				CFD8E32F2136E70900C0F485 /* LTReadOpreration.swift in Sources */,
@@ -468,6 +473,7 @@
 				CF2E79CA2139326D00886730 /* LTReadConfigure.swift in Sources */,
 				CF6F3CE620624BE70086EF69 /* LTReadMarkModel.swift in Sources */,
 				CFD8E32C2136E58800C0F485 /* LTReadController.swift in Sources */,
+				CF4C90E4213A6524006F90D5 /* DZMCoverController.m in Sources */,
 				CFD8E3332136E88400C0F485 /* LTReadVC.swift in Sources */,
 				CF6E9E08201B119C00E4BB13 /* LTBaseVC.swift in Sources */,
 				CF2E79CF21393C8200886730 /* NSObject+Extension.swift in Sources */,

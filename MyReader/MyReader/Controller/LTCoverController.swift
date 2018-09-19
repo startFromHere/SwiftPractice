@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LTCover: LTBaseVC {
+class LTcoverController: LTBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
