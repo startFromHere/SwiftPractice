@@ -2,6 +2,8 @@
 
 import UIKit
 
+//edit in test2
+
 func inc( i: inout Int) -> () -> Int {
     return { i += 1; return i }  // 闭包中截获inout参数i
 }
