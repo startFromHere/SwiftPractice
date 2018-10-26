@@ -2,18 +2,19 @@
 
 import UIKit
 
-//edit in test2
-//in git test folder, checkout from remote test1 branch(detached header)
-
-//在 gittest folder 中，添加新分支 test2
-
-//在 gittest folder 中，添加新分支 test3
-
-func inc( i: inout Int) -> () -> Int {
-    return { i += 1; return i }  // 闭包中截获inout参数i
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        for i in 0..<nums.count {
+            let diff = target - nums[i]
+            if (nums.contains(diff)){
+                return [i,nums.index(of: diff)!]
+            }
+        }
+        return []
+    }
 }
 
-var x = 0
-let f = inc(&x)
-print(f()) // 输出结果：“1”
-print(x) // 输出结果：“0”
+let nums = [2, 7, 11, 15], target = 9
+
+let solution = Solution()
+let result = solution.twoSum(nums, target)
