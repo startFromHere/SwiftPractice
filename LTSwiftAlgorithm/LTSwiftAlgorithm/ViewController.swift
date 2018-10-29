@@ -12,8 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        LongestSubStringWithoutRepeatCharacter().solution()
+        ZigZagConversion().solution()
     }
     
 }
+
+//extension String{
+//    subscript(index: Int) -> Substring {
+//        get {
+//            let startIndex = String.Index(encodedOffset: index)
+//            let endIndex = String.Index(encodedOffset: index + 1)
+//            return self[startIndex...endIndex]
+//        }
+//    }
+//}
 
