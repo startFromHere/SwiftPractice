@@ -2,11 +2,21 @@
 
 import UIKit
 
-func inc( i: inout Int) -> () -> Int {
-    return { i += 1; return i }  // 闭包中截获inout参数i
+func computeIntArray(xs:[Int],transform:(Int)->Int)->[Int]{
+    var result:[Int] = []
+    for x in xs {
+        result.append(transform(x))
+    }
+    return result
 }
 
-var x = 0
-let f = inc(&x)
-print(f()) // 输出结果：“1”
-print(x) // 输出结果：“0”
+func doubleArray(xs:[Int]) -> [Int] {
+    return computeIntArray(xs: xs, transform: { (x) -> Int in
+        return x * 2
+    })
+}
+
+
+let arr = [1,2,3,5]
+
+doubleArray(xs: arr)
