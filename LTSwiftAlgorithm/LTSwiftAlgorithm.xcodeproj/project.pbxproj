@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF5744012189E94F00AC0C1F /* ReverseInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5744002189E94F00AC0C1F /* ReverseInteger.swift */; };
 		CF8951A72180586100568F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8951A62180586100568F2F /* AppDelegate.swift */; };
 		CF8951A92180586100568F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8951A82180586100568F2F /* ViewController.swift */; };
 		CF8951AC2180586100568F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF8951AA2180586100568F2F /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF5744002189E94F00AC0C1F /* ReverseInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseInteger.swift; sourceTree = "<group>"; };
 		CF8951A32180586100568F2F /* LTSwiftAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTSwiftAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF8951A62180586100568F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF8951A82180586100568F2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				CF8951DF2183230700568F2F /* MedianOfTwoSortedArrays.swift */,
 				CF8951E12186DDA700568F2F /* LongestPalindromicSubstring.swift */,
 				CF8951E321870D4D00568F2F /* ZigZagConversion.swift */,
+				CF5744002189E94F00AC0C1F /* ReverseInteger.swift */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				CF8951DA2180609D00568F2F /* AddTwoNumbers.swift in Sources */,
 				CF8951E22186DDA700568F2F /* LongestPalindromicSubstring.swift in Sources */,
 				CF8951DC2180619800568F2F /* LeetcodeSolution.swift in Sources */,
+				CF5744012189E94F00AC0C1F /* ReverseInteger.swift in Sources */,
 				CF8951DE2180657400568F2F /* LongestSubStringWithoutRepeatCharacter.swift in Sources */,
 				CF8951A92180586100568F2F /* ViewController.swift in Sources */,
 				CF8951E421870D4D00568F2F /* ZigZagConversion.swift in Sources */,
@@ -471,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK9W72FL93;
 				INFOPLIST_FILE = LTSwiftAlgorithm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,6 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YK9W72FL93;
 				INFOPLIST_FILE = LTSwiftAlgorithm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
