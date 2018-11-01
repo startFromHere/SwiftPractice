@@ -22,6 +22,8 @@
 		CF8951E02183230700568F2F /* MedianOfTwoSortedArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8951DF2183230700568F2F /* MedianOfTwoSortedArrays.swift */; };
 		CF8951E22186DDA700568F2F /* LongestPalindromicSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8951E12186DDA700568F2F /* LongestPalindromicSubstring.swift */; };
 		CF8951E421870D4D00568F2F /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8951E321870D4D00568F2F /* ZigZagConversion.swift */; };
+		CFB23298218B443100267D4E /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB23297218B443100267D4E /* PalindromeNumber.swift */; };
+		CFB2329A218B465E00267D4E /* RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB23299218B465E00267D4E /* RomanToInteger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		CF8951DF2183230700568F2F /* MedianOfTwoSortedArrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedianOfTwoSortedArrays.swift; sourceTree = "<group>"; };
 		CF8951E12186DDA700568F2F /* LongestPalindromicSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestPalindromicSubstring.swift; sourceTree = "<group>"; };
 		CF8951E321870D4D00568F2F /* ZigZagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
+		CFB23297218B443100267D4E /* PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
+		CFB23299218B465E00267D4E /* RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToInteger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 				CF8951E12186DDA700568F2F /* LongestPalindromicSubstring.swift */,
 				CF8951E321870D4D00568F2F /* ZigZagConversion.swift */,
 				CF5744002189E94F00AC0C1F /* ReverseInteger.swift */,
+				CFB23297218B443100267D4E /* PalindromeNumber.swift */,
+				CFB23299218B465E00267D4E /* RomanToInteger.swift */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -289,8 +295,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF8951DA2180609D00568F2F /* AddTwoNumbers.swift in Sources */,
+				CFB2329A218B465E00267D4E /* RomanToInteger.swift in Sources */,
 				CF8951E22186DDA700568F2F /* LongestPalindromicSubstring.swift in Sources */,
 				CF8951DC2180619800568F2F /* LeetcodeSolution.swift in Sources */,
+				CFB23298218B443100267D4E /* PalindromeNumber.swift in Sources */,
 				CF5744012189E94F00AC0C1F /* ReverseInteger.swift in Sources */,
 				CF8951DE2180657400568F2F /* LongestSubStringWithoutRepeatCharacter.swift in Sources */,
 				CF8951A92180586100568F2F /* ViewController.swift in Sources */,

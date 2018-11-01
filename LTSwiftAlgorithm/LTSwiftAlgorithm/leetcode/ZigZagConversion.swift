@@ -28,7 +28,7 @@ class ZigZagConversion: LeetcodeSolution {
         var tailNumberOfRows = 0
         if s.count%(2*numRows - 2) > numRows {
             tailNumberOfRows = numRows - s.count%(2*numRows - 2)%numRows%numRows
-        } else if s.count%(2*numRows - 2) == 0  {
+        } else if s.count%(2*numRows - 2)%numRows == 0  {
             tailNumberOfRows = numRows
         } else if s.count%(2*numRows - 2) > 0  {
             tailNumberOfRows = s.count%(2*numRows - 2)%numRows
@@ -39,6 +39,9 @@ class ZigZagConversion: LeetcodeSolution {
         var index = 0
         for i in 0..<numberOfLines {
             for j in 0..<numRows {
+                if i == 0 && j == 0 {
+                    
+                }
                 if i == numberOfLines - 1 && j >= tailNumberOfRows {
                     continue
                 }
