@@ -25,6 +25,7 @@
 		CF8951E421870D4D00568F2F /* ZigZagConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8951E321870D4D00568F2F /* ZigZagConversion.swift */; };
 		CFB23298218B443100267D4E /* PalindromeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB23297218B443100267D4E /* PalindromeNumber.swift */; };
 		CFB2329A218B465E00267D4E /* RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB23299218B465E00267D4E /* RomanToInteger.swift */; };
+		CFB2329C218EEA3200267D4E /* ValidParentheses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB2329B218EEA3200267D4E /* ValidParentheses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		CF8951E321870D4D00568F2F /* ZigZagConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZigZagConversion.swift; sourceTree = "<group>"; };
 		CFB23297218B443100267D4E /* PalindromeNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumber.swift; sourceTree = "<group>"; };
 		CFB23299218B465E00267D4E /* RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanToInteger.swift; sourceTree = "<group>"; };
+		CFB2329B218EEA3200267D4E /* ValidParentheses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidParentheses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				CFB23297218B443100267D4E /* PalindromeNumber.swift */,
 				CFB23299218B465E00267D4E /* RomanToInteger.swift */,
 				CF51BEF5218BF484005F37A6 /* LongestCommonPrefix.swift */,
+				CFB2329B218EEA3200267D4E /* ValidParentheses.swift */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				CF8951A72180586100568F2F /* AppDelegate.swift in Sources */,
 				CF8951D5218059AE00568F2F /* TwoSum.swift in Sources */,
 				CF8951E02183230700568F2F /* MedianOfTwoSortedArrays.swift in Sources */,
+				CFB2329C218EEA3200267D4E /* ValidParentheses.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
