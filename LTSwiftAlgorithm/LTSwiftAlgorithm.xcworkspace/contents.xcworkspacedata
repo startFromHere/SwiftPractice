@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Sorted Set"
+      name = "Sorted Set">
+      <FileRef
+         location = "group:SortedSet.playground">
+      </FileRef>
+      <FileRef
+         location = "group:SortedSet.swift">
+      </FileRef>
+   </Group>
+</Workspace>
