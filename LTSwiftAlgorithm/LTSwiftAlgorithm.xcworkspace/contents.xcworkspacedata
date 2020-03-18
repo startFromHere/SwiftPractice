@@ -7,8 +7,5 @@
       <FileRef
          location = "group:SortedSet.playground">
       </FileRef>
-      <FileRef
-         location = "group:SortedSet.swift">
-      </FileRef>
    </Group>
 </Workspace>

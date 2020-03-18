@@ -9,7 +9,7 @@ var str = "Hello, playground"
 var mySet = SortedSet<Int>()
 
 for _ in 0..<50 {
-    mySet.insert(random(min: 50, max: 500))
+    mySet.insert(random(from: 50, to: 500))
 }
 
 

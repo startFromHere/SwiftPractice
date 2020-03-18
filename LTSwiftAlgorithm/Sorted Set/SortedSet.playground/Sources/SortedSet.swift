@@ -15,7 +15,8 @@ public struct SortedSet<T:Comparable> {
     }
     
     public mutating func insert(_ item:T){
-        if exist(item) return
+        if exist(item) {return}
+        
         for i in 0..<count {
             if internalSet[i] > item {
                 internalSet.insert(item, at: i)
@@ -48,7 +49,24 @@ public struct SortedSet<T:Comparable> {
             } else if internalSet[mid] == item {
                 return mid
             } else {
-                print("what! When the code enter in this scope?")
+                //不满足 comparable 的 < 和 > 两个条件，也不满足 equable 的 == 的条件，比如根据成绩排序的学生，两个学生成绩可能相等，但这两个学生不应该满足 ==
+                for i in stride(from: mid, to: count - 1, by: 1) {
+                    if internalSet[i+1] == item {
+                        return i+1
+                    } else if internalSet[i] < internalSet[i + 1] {
+                        break;
+                    }
+                }
+                
+                for i in stride(from: mid, to: 0, by: -1) {
+                    if internalSet[i-1] == item {
+                        return i - 1
+                    } else if internalSet[i] > internalSet[i - 1] {
+                        break
+                    }
+                }
+                
+                return nil
             }
         }
         return nil
@@ -57,6 +75,22 @@ public struct SortedSet<T:Comparable> {
     public subscript(index: Int) -> T {
         assert(index >= 0 && index < count)
         return internalSet[index]
+    }
+    
+    public func max() -> T? {
+        return count == 0 ? nil : internalSet[count - 1]
+    }
+    
+    public func min() -> T?{
+        return count == 0 ? nil : internalSet[0]
+    }
+    
+    public func kLargest(_ k:Int) -> T?{
+        return k > count || k <= 0 ? nil : internalSet[count - k]
+    }
+    
+    public func kSmallest(_ k:Int) -> T?{
+        return k > count || k <= 0 ? nil : internalSet[k - 1]
     }
     
 }
