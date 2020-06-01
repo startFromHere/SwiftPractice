@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     func test() {
-        var res = Multiply.solution("24", "13")
+        var res = Jump.solution([2,3,1,1,4])
     }
 }
 

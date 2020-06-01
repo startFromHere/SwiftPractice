@@ -36,7 +36,7 @@ class Multiply {
             var carraNum = 0
             var currentRes:Int
             for i in 0..<arr1.count {
-                currentRes = arr1[arr1.count-1-i] + (i >= arr2.count ? 0 : arr2[arr2.count-1-i])
+                currentRes = carraNum + arr1[arr1.count-1-i] + (i >= arr2.count ? 0 : arr2[arr2.count-1-i])
                 carraNum = currentRes / 10
                 res.insert(currentRes % 10, at: 0)
             }
@@ -49,11 +49,11 @@ class Multiply {
         if num1 == "0" || num2 == "0" {return "0"}
         
         let arr1 = Array(num1.count > num2.count ? num1 : num2).map{Int(String($0))} as! [Int]
-        let newArr2 = Array(num1.count > num2.count ? num2 : num1).map{Int(String($0))} as! [Int]
+        let arr2 = Array(num1.count > num2.count ? num2 : num1).map{Int(String($0))} as! [Int]
         var totalSum = [Int]()
         var tempRes = [Int]()
-        for i in 0..<newArr2.count {
-            tempRes = mutiply(of: newArr2[newArr2.count - 1 - i], and: arr1)
+        for i in 0..<arr2.count {
+            tempRes = mutiply(of: arr2[arr2.count - 1 - i], and: arr1)
             for _ in 0..<i {
                 tempRes.append(0)
             }
