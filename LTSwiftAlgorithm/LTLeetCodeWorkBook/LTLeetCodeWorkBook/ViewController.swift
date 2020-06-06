@@ -45,7 +45,7 @@ class ViewController: UIViewController {
     }
     
     func test() {
-        var res = Jump.solution([2,3,1,1,4])
+        var nums = GroupAnagrams.solution(["eat", "tea", "tan", "ate", "nat", "bat"])
     }
 }
 
