@@ -45,7 +45,11 @@ class ViewController: UIViewController {
     }
     
     func test() {
-        var nums = GroupAnagrams.solution(["eat", "tea", "tan", "ate", "nat", "bat"])
+        var nums = SpiralOrder.solution([
+         [ 1, 2, 3 ],
+         [ 4, 5, 6 ],
+         [ 7, 8, 9 ]
+        ])
     }
 }
 
