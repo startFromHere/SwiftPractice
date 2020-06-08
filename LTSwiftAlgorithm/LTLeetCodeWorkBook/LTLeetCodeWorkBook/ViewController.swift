@@ -45,11 +45,7 @@ class ViewController: UIViewController {
     }
     
     func test() {
-        var nums = SpiralOrder.solution([
-         [ 1, 2, 3 ],
-         [ 4, 5, 6 ],
-         [ 7, 8, 9 ]
-        ])
+        var nums = CanJump.solution([3,2,2,0,0,0,1])
     }
 }
 
