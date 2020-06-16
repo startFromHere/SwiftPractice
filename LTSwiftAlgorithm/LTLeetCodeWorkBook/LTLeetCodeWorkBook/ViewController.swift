@@ -21,12 +21,23 @@ class ViewController: UIViewController {
     }
     
     
-    func buildNode() {
-        //        let l11 = ListNode.init(1)
-        //        let l12 = ListNode.init(4)
-        //        let l13 = ListNode.init(5)
-        //        l11.next = l12
-        //        l12.next = l13
+    func buildNode() -> ListNode? {
+        let l11 = ListNode.init(1)
+        let l12 = ListNode.init(2)
+        let l13 = ListNode.init(3)
+        let l14 = ListNode.init(4)
+        let l15 = ListNode.init(5)
+        let l16 = ListNode.init(6)
+        
+        
+        l11.next = l12
+//        l12.next = l13
+//        l13.next = l14
+//        l14.next = l15
+//        l15.next = l16
+        
+        return l11
+        
         //
         //        let l21 = ListNode.init(1)
         //        let l22 = ListNode.init(3)
@@ -44,8 +55,23 @@ class ViewController: UIViewController {
         //        let a = reverseKGroup.solution(l11, 3)
     }
     
+    func buildTree() -> TreeNode {
+        let node0 = TreeNode(1)
+        let node1 = TreeNode(2)
+        let node2 = TreeNode(3)
+        let node3 = TreeNode(4)
+        
+        node0.left = nil
+//        node0.right = node1
+        node1.left = node2
+        node2.left = node3
+        
+        
+        return node0
+    }
+    
     func test() {
-        var nums = CanJump.solution([3,2,2,0,0,0,1])
+        var nums = GenerateTrees.solution(3)
     }
 }
 

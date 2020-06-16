@@ -39,6 +39,14 @@
 		CF479707248E84E80005A068 /* _55CanJump.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF479706248E84E80005A068 /* _55CanJump.swift */; };
 		CF47DF7C247FE8140060D2CA /* __39CombinationSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47DF7B247FE8140060D2CA /* __39CombinationSum.swift */; };
 		CF47DF7E24800D920060D2CA /* __40CombinationSum2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF47DF7D24800D920060D2CA /* __40CombinationSum2.swift */; };
+		CF5ACDC32497A7490046A411 /* _92ReverseBetween.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5ACDC22497A7490046A411 /* _92ReverseBetween.swift */; };
+		CF5ACDC52498F4010046A411 /* _93GenerateTrees.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5ACDC42498F4010046A411 /* _93GenerateTrees.swift */; };
+		CF5C6E73248FBEC400910C3F /* __60GetPermutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C6E72248FBEC400910C3F /* __60GetPermutation.swift */; };
+		CF5C6E75248FE13300910C3F /* _59GenerateMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C6E74248FE13300910C3F /* _59GenerateMatrix.swift */; };
+		CF5C6E7824925CE500910C3F /* _739DailyTemperatures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C6E7724925CE500910C3F /* _739DailyTemperatures.swift */; };
+		CF5C6E7A2493D9A600910C3F /* _70ClimbStairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C6E792493D9A500910C3F /* _70ClimbStairs.swift */; };
+		CF5C6E7C2494EACD00910C3F /* _76MinWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C6E7B2494EACC00910C3F /* _76MinWindow.swift */; };
+		CF5C6E7E24961CC900910C3F /* _94InorderTraversal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C6E7D24961CC800910C3F /* _94InorderTraversal.swift */; };
 		CF61CAF7246283C600A209C1 /* _5LongestPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF61CAF6246283C600A209C1 /* _5LongestPalindrome.swift */; };
 		CF61CAFC2463CB1F00A209C1 /* _8MyAToI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF61CAFB2463CB1F00A209C1 /* _8MyAToI.swift */; };
 		CF61CB0F2464EF4A00A209C1 /* __10IsMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF61CB0E2464EF4A00A209C1 /* __10IsMatch.swift */; };
@@ -133,6 +141,14 @@
 		CF479706248E84E80005A068 /* _55CanJump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _55CanJump.swift; sourceTree = "<group>"; };
 		CF47DF7B247FE8140060D2CA /* __39CombinationSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __39CombinationSum.swift; sourceTree = "<group>"; };
 		CF47DF7D24800D920060D2CA /* __40CombinationSum2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __40CombinationSum2.swift; sourceTree = "<group>"; };
+		CF5ACDC22497A7490046A411 /* _92ReverseBetween.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _92ReverseBetween.swift; sourceTree = "<group>"; };
+		CF5ACDC42498F4010046A411 /* _93GenerateTrees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _93GenerateTrees.swift; sourceTree = "<group>"; };
+		CF5C6E72248FBEC400910C3F /* __60GetPermutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __60GetPermutation.swift; sourceTree = "<group>"; };
+		CF5C6E74248FE13300910C3F /* _59GenerateMatrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _59GenerateMatrix.swift; sourceTree = "<group>"; };
+		CF5C6E7724925CE500910C3F /* _739DailyTemperatures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _739DailyTemperatures.swift; sourceTree = "<group>"; };
+		CF5C6E792493D9A500910C3F /* _70ClimbStairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _70ClimbStairs.swift; sourceTree = "<group>"; };
+		CF5C6E7B2494EACC00910C3F /* _76MinWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _76MinWindow.swift; sourceTree = "<group>"; };
+		CF5C6E7D24961CC800910C3F /* _94InorderTraversal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _94InorderTraversal.swift; sourceTree = "<group>"; };
 		CF61CAF6246283C600A209C1 /* _5LongestPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _5LongestPalindrome.swift; sourceTree = "<group>"; };
 		CF61CAFB2463CB1F00A209C1 /* _8MyAToI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _8MyAToI.swift; sourceTree = "<group>"; };
 		CF61CB0E2464EF4A00A209C1 /* __10IsMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __10IsMatch.swift; sourceTree = "<group>"; };
@@ -223,6 +239,7 @@
 				CF44113C245AB8B700D84A44 /* 1-50 */,
 				CFE4E4A42470030B009DFBE1 /* 51-100 */,
 				CF7DE23F2473BAC100B5B68B /* 251-300 */,
+				CF5C6E7624925CAD00910C3F /* Daily */,
 				CF44110C245AB8A100D84A44 /* AppDelegate.swift */,
 				CF44110E245AB8A100D84A44 /* SceneDelegate.swift */,
 				CF441110245AB8A100D84A44 /* ViewController.swift */,
@@ -309,6 +326,14 @@
 			path = "1-50";
 			sourceTree = "<group>";
 		};
+		CF5C6E7624925CAD00910C3F /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				CF5C6E7724925CE500910C3F /* _739DailyTemperatures.swift */,
+			);
+			path = Daily;
+			sourceTree = "<group>";
+		};
 		CF66FFDC2468DBE800DEB4F1 /* 基础知识 */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,7 +376,14 @@
 				CF479704248E6C4C0005A068 /* _54SpiralOrder.swift */,
 				CF479706248E84E80005A068 /* _55CanJump.swift */,
 				CFA6F382247D6D46007EDDC6 /* _58LengthOfLastWord.swift */,
+				CF5C6E74248FE13300910C3F /* _59GenerateMatrix.swift */,
+				CF5C6E72248FBEC400910C3F /* __60GetPermutation.swift */,
+				CF5C6E792493D9A500910C3F /* _70ClimbStairs.swift */,
+				CF5C6E7B2494EACC00910C3F /* _76MinWindow.swift */,
 				CF1814A82487F0CD0014DA52 /* _88Merge.swift */,
+				CF5ACDC22497A7490046A411 /* _92ReverseBetween.swift */,
+				CF5ACDC42498F4010046A411 /* _93GenerateTrees.swift */,
+				CF5C6E7D24961CC800910C3F /* _94InorderTraversal.swift */,
 			);
 			path = "51-100";
 			sourceTree = "<group>";
@@ -492,25 +524,31 @@
 				CF441111245AB8A100D84A44 /* ViewController.swift in Sources */,
 				CFA6F36D24781C8E007EDDC6 /* _34SearchRange.swift in Sources */,
 				CF66FFE62469743500DEB4F1 /* _18FourSum.swift in Sources */,
+				CF5C6E7C2494EACD00910C3F /* _76MinWindow.swift in Sources */,
 				CF7DE2492474E3E500B5B68B /* _25ReverseKGroup.swift in Sources */,
+				CF5C6E7824925CE500910C3F /* _739DailyTemperatures.swift in Sources */,
 				CF66FFEC246AD5DA00DEB4F1 /* _19RemoveNthFromEnd.swift in Sources */,
 				CF47DF7C247FE8140060D2CA /* __39CombinationSum.swift in Sources */,
 				CF47DF7E24800D920060D2CA /* __40CombinationSum2.swift in Sources */,
 				CF1814A5248692F30014DA52 /* _46Permute.swift in Sources */,
+				CF5C6E7E24961CC900910C3F /* _94InorderTraversal.swift in Sources */,
 				CFE4E4AA24703555009DFBE1 /* _28StrStr.swift in Sources */,
 				CF61CB0F2464EF4A00A209C1 /* __10IsMatch.swift in Sources */,
 				CFE4E4AE24712F0E009DFBE1 /* _31NextPermutation.swift in Sources */,
 				CF479707248E84E80005A068 /* _55CanJump.swift in Sources */,
 				CF66023B246D726A00DEB4F1 /* _27RemoveElement.swift in Sources */,
+				CF5C6E75248FE13300910C3F /* _59GenerateMatrix.swift in Sources */,
 				CF7DE24F247525DF00B5B68B /* __30FindSubstring.swift in Sources */,
 				CF441140245B20F300D84A44 /* _2AddTwoNums.swift in Sources */,
 				CF06B7932472773C0096FD05 /* _38CountAndSay.swift in Sources */,
 				CF7DE2432473C09800B5B68B /* _23MergeKLists.swift in Sources */,
+				CF5ACDC52498F4010046A411 /* _93GenerateTrees.swift in Sources */,
 				CF2FA8C524820BC900F9AFBF /* __41FirstMissingPositive.swift in Sources */,
 				CFD9C5CF248BB3180028257A /* _50MyPow.swift in Sources */,
 				CF66FFD124669DB700DEB4F1 /* _12IntToRoman.swift in Sources */,
 				CF7DE23E2473A89F00B5B68B /* _45Jump.swift in Sources */,
 				CF7DE25424768D5C00B5B68B /* _33Search.swift in Sources */,
+				CF5C6E7A2493D9A600910C3F /* _70ClimbStairs.swift in Sources */,
 				CF441150245FFE3100D84A44 /* _20IsValid.swift in Sources */,
 				CF479705248E6C4C0005A068 /* _54SpiralOrder.swift in Sources */,
 				CF61CAFC2463CB1F00A209C1 /* _8MyAToI.swift in Sources */,
@@ -518,6 +556,7 @@
 				CF66FFD52468509600DEB4F1 /* _16threeSumClosest.swift in Sources */,
 				CF66023D246D958700DEB4F1 /* __29Divide.swift in Sources */,
 				CFE4E4A824702E53009DFBE1 /* _24SwapPairs.swift in Sources */,
+				CF5ACDC32497A7490046A411 /* _92ReverseBetween.swift in Sources */,
 				CF66FFE224692AD900DEB4F1 /* BinaryTree.swift in Sources */,
 				CF44110D245AB8A100D84A44 /* AppDelegate.swift in Sources */,
 				CF61CAF7246283C600A209C1 /* _5LongestPalindrome.swift in Sources */,
@@ -534,6 +573,7 @@
 				CFA6F381247D684D007EDDC6 /* __48Rotate.swift in Sources */,
 				CF441142245C3F7C00D84A44 /* _3LengthOfLongestSubstring.swift in Sources */,
 				CF2FA8E92482A68C00F9AFBF /* __44IsMatch.swift in Sources */,
+				CF5C6E73248FBEC400910C3F /* __60GetPermutation.swift in Sources */,
 				CF66FFDF2468DC5900DEB4F1 /* LTQuikSort.swift in Sources */,
 				CF1814A72487C8FB0014DA52 /* __47PermuteUnique.swift in Sources */,
 				CFA6F377247BF0B9007EDDC6 /* _36IsValidSudoku.swift in Sources */,

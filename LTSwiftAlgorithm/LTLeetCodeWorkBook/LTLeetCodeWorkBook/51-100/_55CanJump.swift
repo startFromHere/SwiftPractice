@@ -74,6 +74,18 @@ class CanJump {
             return countOfZero == 0
         }
         
-        return _solution3()
+        func _solution4() -> Bool {
+            var farthest = 0
+            for i in 0..<nums.count {
+                if (i > farthest) {
+                    return false
+                } else if (nums[i] + i) > farthest {
+                    farthest = nums[i] + i
+                }
+            }
+            return true
+        }
+        
+        return _solution4()
     }
 }
