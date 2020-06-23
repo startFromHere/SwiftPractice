@@ -56,22 +56,55 @@ class ViewController: UIViewController {
     }
     
     func buildTree() -> TreeNode {
-        let node0 = TreeNode(1)
-        let node1 = TreeNode(2)
-        let node2 = TreeNode(3)
-        let node3 = TreeNode(4)
+        let node0 = TreeNode(10)
+        let node1 = TreeNode(5)
+        let node2 = TreeNode(15)
+        let node3 = TreeNode(2)
         
-        node0.left = nil
-//        node0.right = node1
-        node1.left = node2
-        node2.left = node3
+//        node0.left = node1
+        node0.right = node1
+//        node1.right = node2
+//        node2.left = node3
         
         
         return node0
     }
     
+    func buildTree2() -> TreeNode {
+            let node0 = TreeNode(5)
+            let node1 = TreeNode(4)
+            let node2 = TreeNode(1)
+            let node3 = TreeNode(1)
+            let node4 = TreeNode(4)
+            let node5 = TreeNode(2)
+            let node6 = TreeNode(2)
+            
+            node0.left = node1
+        node0.right = node2
+        node1.right = node3
+        node2.right = node4
+        node3.left = node5
+        node4.left = node6
+            
+            
+            return node0
+        }
+    
     func test() {
-        var nums = GenerateTrees.solution(3)
+        let arr = [
+          ["1","0","1","0","0"],
+          ["1","0","1","1","1"],
+          ["1","1","1","1","1"],
+          ["1","0","0","1","0"]
+        ]
+         
+        let charArr = arr.map({ (eleArr) -> [Character] in
+            eleArr.map{Character($0)}
+        })
+
+//        let a = MaximalRectangle.solution(charArr);
+        let t2 = buildTree2()
+        let a = isSymmetric.solution(t2)
     }
 }
 
