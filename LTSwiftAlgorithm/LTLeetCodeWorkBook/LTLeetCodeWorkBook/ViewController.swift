@@ -91,20 +91,7 @@ class ViewController: UIViewController {
         }
     
     func test() {
-        let arr = [
-          ["1","0","1","0","0"],
-          ["1","0","1","1","1"],
-          ["1","1","1","1","1"],
-          ["1","0","0","1","0"]
-        ]
-         
-        let charArr = arr.map({ (eleArr) -> [Character] in
-            eleArr.map{Character($0)}
-        })
-
-//        let a = MaximalRectangle.solution(charArr);
-        let t2 = buildTree2()
-        let a = isSymmetric.solution(t2)
+        let a = SortedArrayToBST.solution([-10,-3,0,5,9])
     }
 }
 
