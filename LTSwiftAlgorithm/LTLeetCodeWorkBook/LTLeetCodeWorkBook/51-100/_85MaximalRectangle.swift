@@ -10,58 +10,48 @@ import Foundation
 
 class MaximalRectangle {
     static func solution(_ matrix: [[Character]]) -> Int {
-        
-        let m = matrix.count
-        if m == 0 {
+        if matrix.count == 0 {
             return 0
         }
+        
+        func maxArea(of values:[Int]) ->Int {
+            var tempValues = values
+            tempValues.append(0)
+            
+            var stack = [Int]()
+            var res = 0
+            for i in 0..<tempValues.count {
+                while stack.count > 0, tempValues[stack.last!] > tempValues[i] {
+                    let idx = stack.removeLast()
+                    let height = tempValues[idx]
+                    var currentLastIndex = 0
+                    if stack.count > 0 {
+                        currentLastIndex = stack.last! + 1
+                    }
+                    res = max(res, height * (i - currentLastIndex))
+                }
+                stack.append(i)
+            }
+            return res
+        }
+        
+        let height = matrix.count
+        let width = matrix[0].count
+        var heights = Array.init(repeating: 0, count: width)
+        
         var ans = 0
-        let n = matrix[0].count
         
-        var hMemo = Array.init(repeating: (Array.init(repeating: (0,0), count: n)), count: m)
-        var vMemo = Array.init(repeating: (Array.init(repeating: (0,0), count: n)), count: m)
-        
-        func _solution(_ row:Int, _ column:Int, _ isHorizon:Bool) -> (Int, Int){
-            if row >= m || column >= n {return (0, 0)}
-            if matrix[row][column] == "0" {return (0, 0)}
-            if isHorizon, hMemo[row][column] != (0, 0) {
-                return hMemo[row][column]
+        if matrix.count == 0 {return 0}
+        for i in 0..<height{
+            for j in 0..<width {
+                if matrix[i][j] == "1" {
+                    heights[j] += 1
+                } else {
+                    heights[j] = 0
+                }
             }
-            if !isHorizon, vMemo[row][column] != (0, 0) {
-                return vMemo[row][column]
-            }
-            let right = _solution(row, column + 1, true)
-            let bottom = _solution(row+1, column, false)
-            
-            let height = min(bottom.0 + 1, right.0)
-            let width = min(bottom.1, right.1 + 1)
-            
-            let maxRight = (right.1 + 1) * height
-            let maxBottom = (bottom.0 + 1) * width
-            
-            let maxArea = max(maxRight, maxBottom)
-            if maxArea > ans {
-                ans = maxArea
-            }
-            
-            hMemo[row][column] = (max(1, height), right.1 + 1)
-            vMemo[row][column] = ((bottom.0 + 1), max(width, 1))
-            print("h:\(row) \(column): \(hMemo[row][column])")
-            print("v:\(row) \(column): \(vMemo[row][column])")
-            if isHorizon {
-                return hMemo[row][column]
-            }
-            
-            return vMemo[row][column]
+            ans = max(ans, maxArea(of: heights))
         }
-        
-        for i in 0..<m {
-            for j in 0..<n {
-                _ = _solution(i, j, true)
-                _ = _solution(i, j, false)
-            }
-        }
-        
         
         return ans
     }

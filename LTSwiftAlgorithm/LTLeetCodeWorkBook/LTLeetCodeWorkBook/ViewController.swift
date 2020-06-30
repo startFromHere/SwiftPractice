@@ -91,7 +91,7 @@ class ViewController: UIViewController {
         }
     
     func test() {
-        let a = SortedArrayToBST.solution([-10,-3,0,5,9])
+        let a = RestoreIpAddresses.solution("1001001")
     }
 }
 
