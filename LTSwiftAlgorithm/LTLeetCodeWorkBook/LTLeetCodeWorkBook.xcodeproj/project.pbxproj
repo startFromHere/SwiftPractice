@@ -99,6 +99,7 @@
 		CFF0B77524A86FDF00A6297E /* _75SortColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0B77424A86FDF00A6297E /* _75SortColors.swift */; };
 		CFF0B77724A885D200A6297E /* _56Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF0B77624A885D200A6297E /* _56Merge.swift */; };
 		CFF1F85E24A9FBDE0074B84B /* _93RestoreIpAddresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1F85D24A9FBDE0074B84B /* _93RestoreIpAddresses.swift */; };
+		CFF1F86324AB3B2C0074B84B /* _57Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF1F86224AB3B2C0074B84B /* _57Insert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,6 +218,7 @@
 		CFF0B77424A86FDF00A6297E /* _75SortColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _75SortColors.swift; sourceTree = "<group>"; };
 		CFF0B77624A885D200A6297E /* _56Merge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _56Merge.swift; sourceTree = "<group>"; };
 		CFF1F85D24A9FBDE0074B84B /* _93RestoreIpAddresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _93RestoreIpAddresses.swift; sourceTree = "<group>"; };
+		CFF1F86224AB3B2C0074B84B /* _57Insert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _57Insert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +421,7 @@
 				CF479704248E6C4C0005A068 /* _54SpiralOrder.swift */,
 				CF479706248E84E80005A068 /* _55CanJump.swift */,
 				CFF0B77624A885D200A6297E /* _56Merge.swift */,
+				CFF1F86224AB3B2C0074B84B /* _57Insert.swift */,
 				CFA6F382247D6D46007EDDC6 /* _58LengthOfLastWord.swift */,
 				CF5C6E74248FE13300910C3F /* _59GenerateMatrix.swift */,
 				CF5C6E72248FBEC400910C3F /* __60GetPermutation.swift */,
@@ -657,6 +660,7 @@
 				CF441144245D82FE00D84A44 /* _7Reverse.swift in Sources */,
 				CF1814A92487F0CD0014DA52 /* _88Merge.swift in Sources */,
 				CFA6F383247D6D46007EDDC6 /* _58LengthOfLastWord.swift in Sources */,
+				CFF1F86324AB3B2C0074B84B /* _57Insert.swift in Sources */,
 				CF7DE2412473BB0600B5B68B /* _300LengthOfLIS.swift in Sources */,
 				CF5ACDC7249BA0610046A411 /* _98IsValidBST.swift in Sources */,
 				CF44114E245EDCE500D84A44 /* _14LongestCommonPrefix.swift in Sources */,
