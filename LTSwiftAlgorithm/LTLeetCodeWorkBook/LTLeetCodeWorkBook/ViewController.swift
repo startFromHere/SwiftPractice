@@ -91,7 +91,26 @@ class ViewController: UIViewController {
         }
     
     func test() {
-        let a = RestoreIpAddresses.solution("1001001")
+        let arr = [
+          ["1","1","1","1","1"],
+          ["1","0","0","1","0"]
+        ]
+         
+        let charArr = arr.map({ (eleArr) -> [Character] in
+            eleArr.map{Character($0)}
+        })
+        
+        var node1 = ListNode(1)
+        var node2 = ListNode(2)
+        var node3 = ListNode(3)
+        var node4 = ListNode(4)
+        var node5 = ListNode(5)
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        
+        let a = RotateRight.solution(node1, 6)
     }
 }
 
