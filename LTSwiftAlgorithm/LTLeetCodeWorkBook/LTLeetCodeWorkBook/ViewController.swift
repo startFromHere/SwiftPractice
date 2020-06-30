@@ -100,7 +100,17 @@ class ViewController: UIViewController {
             eleArr.map{Character($0)}
         })
         
-        let a = MaximalRectangle.solution(charArr)
+        var node1 = ListNode(1)
+        var node2 = ListNode(2)
+        var node3 = ListNode(3)
+        var node4 = ListNode(4)
+        var node5 = ListNode(5)
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        
+        let a = RotateRight.solution(node1, 2)
     }
 }
 
