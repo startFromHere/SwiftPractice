@@ -71,46 +71,37 @@ class ViewController: UIViewController {
     }
     
     func buildTree2() -> TreeNode {
-            let node0 = TreeNode(5)
-            let node1 = TreeNode(4)
-            let node2 = TreeNode(1)
-            let node3 = TreeNode(1)
-            let node4 = TreeNode(4)
-            let node5 = TreeNode(2)
-            let node6 = TreeNode(2)
-            
-            node0.left = node1
+        let node0 = TreeNode(5)
+        let node1 = TreeNode(4)
+        let node2 = TreeNode(8)
+        let node3 = TreeNode(11)
+        let node4 = TreeNode(13)
+        let node5 = TreeNode(4)
+        let node6 = TreeNode(7)
+        let node7 = TreeNode(2)
+        let node8 = TreeNode(5)
+        let node9 = TreeNode(1)
+        
+        node0.left = node1
         node0.right = node2
         node1.right = node3
-        node2.right = node4
-        node3.left = node5
-        node4.left = node6
+        node2.left = node4
+        node2.right = node5
+        node3.left = node6
+        node3.right = node7
+        node4.left = node8
+        node4.right = node9
             
             
             return node0
         }
     
     func test() {
-        let arr = [
-          ["1","1","1","1","1"],
-          ["1","0","0","1","0"]
-        ]
-         
-        let charArr = arr.map({ (eleArr) -> [Character] in
-            eleArr.map{Character($0)}
-        })
         
-        var node1 = ListNode(1)
-        var node2 = ListNode(2)
-        var node3 = ListNode(3)
-        var node4 = ListNode(4)
-        var node5 = ListNode(5)
-        node1.next = node2
-        node2.next = node3
-        node3.next = node4
-        node4.next = node5
         
-        let a = RotateRight.solution(node1, 6)
+        let node_n = buildTree2()
+        
+        let a = MaxProfit2.solution([10,10,5,15])
     }
 }
 
