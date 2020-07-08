@@ -10,30 +10,35 @@ import Foundation
 
 class RotateRight {
     static func solution(_ head: ListNode?, _ k: Int) -> ListNode? {
-        var lNode = head, rNode = head
-        var myHead: ListNode?
-        for _ in 0..<k{
-            if rNode?.next != nil {
-                rNode?.next = head
-                myHead = lNode?.next
-                lNode?.next = nil
-                return myHead
-            }
+        if k == 0 {return head}
+        
+        var len = 1
+        var node = head
+        var idx = 0
+        while node?.next != nil {
+            node = node?.next
+            len += 1
         }
         
-        while true {
-            if rNode?.next == nil {
-                rNode?.next = head
-                myHead = lNode?.next
-                lNode?.next = nil
-                break
-            } else {
-                lNode = lNode?.next
-                rNode = rNode?.next
-            }
+        node?.next = head
+        
+        if len <= k {
+            idx = len - 1 - k % len
+        } else {
+            idx = len - 1 - k
         }
         
-        return myHead
+        node = head
+        for _ in 0..<idx {
+            node = node?.next
+        }
+        
+        let ans = node?.next
+        node?.next = nil
+        
+        return ans
+        
+        
     }
     
     static func solution1(_ head: ListNode?, _ k: Int) -> ListNode? {

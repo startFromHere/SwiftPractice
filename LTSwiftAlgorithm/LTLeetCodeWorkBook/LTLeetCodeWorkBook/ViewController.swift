@@ -110,7 +110,7 @@ class ViewController: UIViewController {
         node3.next = node4
         node4.next = node5
         
-        let a = RotateRight.solution(node1, 2)
+        let a = RotateRight.solution(node1, 6)
     }
 }
 

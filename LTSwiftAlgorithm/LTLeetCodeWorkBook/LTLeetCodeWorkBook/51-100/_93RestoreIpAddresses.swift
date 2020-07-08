@@ -8,29 +8,42 @@
 
 import Foundation
 
-class restoreIpAddresses {
+class RestoreIpAddresses {
     static func solution(_ s: String) -> [String] {
-        if s.count < 4 {return []}
-        var ans: [String] = []
-        let arr = Array(s)
-        var idx0 = 0, idx1 = 1, idx2 = s.count - 2
-        
-        func _solution(_s: String, count: Int) {
-            while idx0 < idx1 {
-                let num0 = Int(String(arr[0...idx0]))!
-                while idx1 < idx2 {
-                    let num1 = Int(String(arr[idx0+1...idx1]))!
-                    while idx2 < s.count - 1 {
-                        let num2 = Int(String(arr[idx1+1...idx2]))!
-                        let num3 = Int(String(arr[idx2+1...s.count - 1]))!
-                        if num0 < 256, num1 < 256, num2 < 256,num3 < 256{
-                            ans.append("\(num0)\(num1)\(num2)\(num3)")
-                        }
+        if s.count < 4 || s.count > 12 {return []}
+        var arr = Array(s)
+        var ans = [String]()
+        var temp = [String]()
+        func _valid(from idx: Int, remainCount count: Int) {
+            if idx >= s.count {return}
+            if count == 1 {
+                var str = String(arr[idx...s.count-1])
+                var value = Int(str)!
+                if (value < 256) && (!(str.count > 1 && str.hasPrefix("0")))  {
+                    temp.append(str)
+                    ans.append(temp.joined(separator: "."))
+                    temp.removeLast()
+                }
+            } else {
+                var endIndex = idx
+                var str = String(arr[idx...endIndex])
+                while Int(str)! < 256 {
+                    if !(str.count > 1 && str.hasPrefix("0")) {
+                        temp.append(str)
+                        _valid(from: endIndex+1, remainCount: count - 1)
+                        temp.removeLast()
+                        
                     }
+                    endIndex += 1
+                    if endIndex >= s.count {
+                        return
+                    }
+                    str = String(arr[idx...endIndex])
                 }
             }
         }
         
+        _valid(from: 0, remainCount: 4)
         return ans
     }
 }
