@@ -23,18 +23,18 @@ class ViewController: UIViewController {
     
     func buildNode() -> ListNode? {
         let l11 = ListNode.init(1)
-        let l12 = ListNode.init(2)
+        let l12 = ListNode.init(4)
         let l13 = ListNode.init(3)
-        let l14 = ListNode.init(4)
+        let l14 = ListNode.init(2)
         let l15 = ListNode.init(5)
-        let l16 = ListNode.init(6)
+        let l16 = ListNode.init(2)
         
         
         l11.next = l12
-//        l12.next = l13
-//        l13.next = l14
-//        l14.next = l15
-//        l15.next = l16
+        l12.next = l13
+        l13.next = l14
+        l14.next = l15
+        l15.next = l16
         
         return l11
         
@@ -99,9 +99,9 @@ class ViewController: UIViewController {
     func test() {
         
         
-        let node_n = buildTree2()
-        
-        let a = MaxProfit2.solution([10,10,5,15])
+        let node_n = buildNode()
+        var arr = [1,1,2,2];
+        let a = Search1.solution([2,5,6,0,0,1,2], 0)
     }
 }
 
